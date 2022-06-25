@@ -46,7 +46,7 @@ bool pm_read(pm_data *data)
     data->pm25_standard = buffer_u16[1];
     data->pm100_standard = buffer_u16[2];
     data->pm10_env = buffer_u16[3];
-    data->pm10_env = buffer_u16[4];
+    data->pm25_env = buffer_u16[4];
     data->pm100_env = buffer_u16[5];
     data->particles_03um = buffer_u16[6]; 
     data->particles_05um =  buffer_u16[7];

@@ -21,6 +21,14 @@
 
 #include "location_tracking.h"
 
+#define I2C2_NODE DT_NODELABEL(i2c2) /* I2C1_NODE = i2c1 defined in the .dts file */
+#if DT_NODE_HAS_STATUS(I2C2_NODE, okay)
+#define I2C2 DT_LABEL(I2C2_NODE)
+/* A build error here means your board does not have I2C enabled. */
+#else "i2c2 devicetree node is disabled"
+#define I2C2 ""
+#endif
+
 LOG_MODULE_REGISTER(application, CONFIG_MQTT_MULTI_SERVICE_LOG_LEVEL);
 
 /* Timer used to time the sensor sampling rate. */
@@ -272,7 +280,7 @@ void main_application(void)
 
 		if (pm_read(&data) == 0)
 		{
-			(void)send_sensor_sample("pm2.5", data.particles_25um);
+			(void)send_sensor_sample("pm2.5", data.pm25_env);
 		}
 
 		if (IS_ENABLED(CONFIG_TEST_COUNTER))
