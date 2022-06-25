@@ -16,6 +16,9 @@ target_sources(app PRIVATE src/connection.c)
 target_sources(app PRIVATE src/temperature.c)
 target_sources(app PRIVATE src/fota_support.c)
 target_sources(app PRIVATE src/location_tracking.c)
+target_sources(app PRIVATE src/particulate_matter.c)
+target_sources(app PRIVATE src/sht40.c)
+
 # NORDIC SDK APP END
 
 zephyr_include_directories(src)

@@ -91,7 +91,7 @@ config CONSECUTIVE_SEND_FAILURE_COOLDOWN_SECONDS
 
 config SENSOR_SAMPLE_INTERVAL_SECONDS
 	int "Sensor sampling interval (seconds)"
-	default 60
+	default 6
 	help
 	  Sets the time to wait between each sensor sample.
 

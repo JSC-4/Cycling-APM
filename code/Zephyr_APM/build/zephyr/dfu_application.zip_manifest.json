@@ -1,0 +1,25 @@
+{
+    "format-version": 0,
+    "time": 1656121211,
+    "files": [
+        {
+            "load_address": 115200,
+            "version_MCUBOOT": "0.0.0+0",
+            "type": "application",
+            "board": "nrf9160dk_nrf9160",
+            "soc": "nRF9160_SICA",
+            "size": 249067,
+            "file": "app_update.bin",
+            "modtime": 1656121211
+        }
+    ],
+    "name": "Zephyr_APM",
+    "firmware": {
+        "zephyr": {
+            "revision": "0a904d0c176acf67ab10285e42f4d1924bc5bb79"
+        },
+        "nrf": {
+            "revision": "880c82dba48655ee3a75edaefa0208782967ff17-dirty"
+        }
+    }
+}

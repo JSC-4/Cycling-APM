@@ -1,0 +1,203 @@
+modules:
+- name: nrf
+  path: C:/ncs/v2.0.0/nrf
+  revision: 880c82dba48655ee3a75edaefa0208782967ff17-dirty
+- name: mcuboot
+  path: C:/ncs/v2.0.0/bootloader/mcuboot
+  revision: 129b6312d61a9dc2c3b0c8810326678cdbd27b80
+- name: mbedtls
+  path: C:/ncs/v2.0.0/modules/crypto/mbedtls
+  revision: 3e3e58a92de76069730c63e0d524f40fea948a61
+- name: trusted-firmware-m
+  path: C:/ncs/v2.0.0/modules/tee/tf-m/trusted-firmware-m
+  revision: cf76972fdd9911fb8a957e4a3f67e32acb546eb7
+- name: tfm-mcuboot
+  path: C:/ncs/v2.0.0/modules/tee/tfm-mcuboot
+  revision: 4aa516e7281fc6f9a2dce0b0efda9acc580fa254
+- name: cjson
+  path: C:/ncs/v2.0.0/modules/lib/cjson
+  revision: c6af068b7f05207b28d68880740e4b9ec1e4b50a
+- name: zcbor
+  path: C:/ncs/v2.0.0/modules/lib/zcbor
+  revision: 3d36ae19cb05d28cea23b4c870ae965c44215e9c
+- name: memfault-firmware-sdk
+  path: C:/ncs/v2.0.0/modules/lib/memfault-firmware-sdk
+  revision: b7eea3b5d8e533d04c6bedbb8148938667334b91
+- name: nfed
+  path: C:/ncs/v2.0.0/nfed
+  revision: 31ef076c57d2a8e33946148297eb4592e5f713a0
+- name: canopennode
+  path: C:/ncs/v2.0.0/modules/lib/canopennode
+  revision: 53d3415c14d60f8f4bfca54bfbc5d5a667d7e724
+- name: chre
+  path: C:/ncs/v2.0.0/modules/lib/chre
+  revision: 0edfe2c2ec656afb910cfab8ed59a5ffd59b87c8
+- name: civetweb
+  path: C:/ncs/v2.0.0/modules/lib/civetweb
+  revision: 094aeb41bb93e9199d24d665ee43e9e05d6d7b1c
+- name: cmsis
+  path: C:/ncs/v2.0.0/modules/hal/cmsis
+  revision: ed63b704bbfaceb71220557b658304c5ea3d5b88
+- name: fatfs
+  path: C:/ncs/v2.0.0/modules/fs/fatfs
+  revision: 9237454a30bcf6e14a89db174e8dbeb8f31831d2
+- name: hal_nordic
+  path: C:/ncs/v2.0.0/modules/hal/nordic
+  revision: a85bb3676d61d1ae202088e0d3fec556056b2c9e
+- name: st
+  path: C:/ncs/v2.0.0/modules/hal/st
+  revision: 575de9d461aa6f430cf62c58a053675377e700f3
+- name: libmetal
+  path: C:/ncs/v2.0.0/modules/hal/libmetal
+  revision: c6efe091dfe02704097586a522969b5a4cc197bd
+- name: liblc3codec
+  path: C:/ncs/v2.0.0/modules/lib/liblc3codec
+  revision: 3951cf1b71ff3be086c9b9b595e473e12301337c
+- name: littlefs
+  path: C:/ncs/v2.0.0/modules/fs/littlefs
+  revision: 7b2cf4ba759bd530b543644e2790b07cf20cd6aa
+- name: loramac-node
+  path: C:/ncs/v2.0.0/modules/lib/loramac-node
+  revision: 12019623bbad9eb54fe51066847a7cbd4b4eac57
+- name: lvgl
+  path: C:/ncs/v2.0.0/modules/lib/gui/lvgl
+  revision: a2e17073e5208c221e24e3c2b3b6c473e878bd1e
+- name: lz4
+  path: C:/ncs/v2.0.0/modules/lib/lz4
+  revision: 8e303c264fc21c2116dc612658003a22e933124d
+- name: mipi-sys-t
+  path: C:/ncs/v2.0.0/modules/debug/mipi-sys-t
+  revision: 2f51407b2ac68e2be41af322a42905063f009d75
+- name: nanopb
+  path: C:/ncs/v2.0.0/modules/lib/nanopb
+  revision: d148bd26718e4c10414f07a7eb1bd24c62e56c5d
+- name: nrf_hw_models
+  path: C:/ncs/v2.0.0/modules/bsim_hw_models/nrf_hw_models
+  revision: b8cea37dbdc8fc58cc14b4e19fa850877a9da520
+- name: open-amp
+  path: C:/ncs/v2.0.0/modules/lib/open-amp
+  revision: cfd050ff38a9d028dc211690b2ec35971128e45e
+- name: openthread
+  path: C:/ncs/v2.0.0/modules/lib/openthread
+  revision: e2a765599aa0379d0f72f0149a9cbafec070c12d
+- name: segger
+  path: C:/ncs/v2.0.0/modules/debug/segger
+  revision: 3a52ab222133193802d3c3b4d21730b9b1f1d2f6
+- name: tinycbor
+  path: C:/ncs/v2.0.0/modules/lib/tinycbor
+  revision: 9e1f34bc08123aaad7666d3652aaa839e8178b3b
+- name: tinycrypt
+  path: C:/ncs/v2.0.0/modules/crypto/tinycrypt
+  revision: 3e9a49d2672ec01435ffbf0d788db6d95ef28de0
+- name: TraceRecorder
+  path: C:/ncs/v2.0.0/modules/debug/TraceRecorder
+  revision: e8ca3b6a83d19b2fc4738a0d9607190436e5e452
+- name: tf-m-tests
+  path: C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests
+  revision: 52814181f0fde6d1422fac204d42cde30c62e40e
+- name: psa-arch-tests
+  path: C:/ncs/v2.0.0/modules/tee/tf-m/psa-arch-tests
+  revision: 4f45df539d3d98b6e38e112be9936be4a2b8a97c
+- name: zscilib
+  path: C:/ncs/v2.0.0/modules/lib/zscilib
+  revision: 12bfe3f0a9fcbfe3edab7eabc9678b6c62875d34
+- name: nrfxlib
+  path: C:/ncs/v2.0.0/nrfxlib
+  revision: 1296d4453b5c8f7ea099ff49c87ebb39a8325fc5
+- name: connectedhomeip
+  path: C:/ncs/v2.0.0/modules/lib/matter
+  revision: 2a120900eab582f3398344e203a40c43a23aeeff
+west:
+  manifest: C:\ncs\v2.0.0\nrf\west.yml
+  projects:
+  - path: C:/ncs/v2.0.0/nrf
+    revision: 880c82dba48655ee3a75edaefa0208782967ff17-dirty
+  - path: C:/ncs/v2.0.0/zephyr
+    revision: 0a904d0c176acf67ab10285e42f4d1924bc5bb79
+  - path: C:/ncs/v2.0.0/bootloader/mcuboot
+    revision: 129b6312d61a9dc2c3b0c8810326678cdbd27b80
+  - path: C:/ncs/v2.0.0/mbedtls
+    revision: b36261c55227451dd8fadddf56e21d076e351a0a
+  - path: C:/ncs/v2.0.0/nrfxlib
+    revision: 1296d4453b5c8f7ea099ff49c87ebb39a8325fc5
+  - path: C:/ncs/v2.0.0/modules/tee/tf-m/trusted-firmware-m
+    revision: cf76972fdd9911fb8a957e4a3f67e32acb546eb7
+  - path: C:/ncs/v2.0.0/modules/tee/tfm-mcuboot
+    revision: 4aa516e7281fc6f9a2dce0b0efda9acc580fa254
+  - path: C:/ncs/v2.0.0/modules/lib/matter
+    revision: 2a120900eab582f3398344e203a40c43a23aeeff
+  - path: C:/ncs/v2.0.0/modules/lib/cjson
+    revision: c6af068b7f05207b28d68880740e4b9ec1e4b50a
+  - path: C:/ncs/v2.0.0/test/cmock
+    revision: 9d092898ef26ece140d9225e037274b64d4f851e-dirty-off
+  - path: C:/ncs/v2.0.0/test/cmock/vendor/unity
+    revision: 74cde089e65c3435ce9aa87d5c69f4f16b7f6ade
+  - path: C:/ncs/v2.0.0/modules/lib/zcbor
+    revision: 3d36ae19cb05d28cea23b4c870ae965c44215e9c
+  - path: C:/ncs/v2.0.0/modules/lib/memfault-firmware-sdk
+    revision: b7eea3b5d8e533d04c6bedbb8148938667334b91
+  - path: C:/ncs/v2.0.0/nfed
+    revision: 31ef076c57d2a8e33946148297eb4592e5f713a0
+  - path: C:/ncs/v2.0.0/modules/lib/canopennode
+    revision: 53d3415c14d60f8f4bfca54bfbc5d5a667d7e724
+  - path: C:/ncs/v2.0.0/modules/lib/chre
+    revision: 0edfe2c2ec656afb910cfab8ed59a5ffd59b87c8
+  - path: C:/ncs/v2.0.0/modules/lib/civetweb
+    revision: 094aeb41bb93e9199d24d665ee43e9e05d6d7b1c
+  - path: C:/ncs/v2.0.0/modules/hal/cmsis
+    revision: ed63b704bbfaceb71220557b658304c5ea3d5b88
+  - path: C:/ncs/v2.0.0/tools/edtt
+    revision: 1ea61a390d2bfcf3b2ecdba8f8b0b98dfdffbd11
+  - path: C:/ncs/v2.0.0/modules/fs/fatfs
+    revision: 9237454a30bcf6e14a89db174e8dbeb8f31831d2
+  - path: C:/ncs/v2.0.0/modules/hal/nordic
+    revision: a85bb3676d61d1ae202088e0d3fec556056b2c9e
+  - path: C:/ncs/v2.0.0/modules/hal/st
+    revision: 575de9d461aa6f430cf62c58a053675377e700f3
+  - path: C:/ncs/v2.0.0/modules/hal/libmetal
+    revision: c6efe091dfe02704097586a522969b5a4cc197bd
+  - path: C:/ncs/v2.0.0/modules/lib/liblc3codec
+    revision: 3951cf1b71ff3be086c9b9b595e473e12301337c
+  - path: C:/ncs/v2.0.0/modules/fs/littlefs
+    revision: 7b2cf4ba759bd530b543644e2790b07cf20cd6aa
+  - path: C:/ncs/v2.0.0/modules/lib/loramac-node
+    revision: 12019623bbad9eb54fe51066847a7cbd4b4eac57
+  - path: C:/ncs/v2.0.0/modules/lib/gui/lvgl
+    revision: a2e17073e5208c221e24e3c2b3b6c473e878bd1e
+  - path: C:/ncs/v2.0.0/modules/lib/lz4
+    revision: 8e303c264fc21c2116dc612658003a22e933124d
+  - path: C:/ncs/v2.0.0/modules/crypto/mbedtls
+    revision: 3e3e58a92de76069730c63e0d524f40fea948a61
+  - path: C:/ncs/v2.0.0/modules/debug/mipi-sys-t
+    revision: 2f51407b2ac68e2be41af322a42905063f009d75
+  - path: C:/ncs/v2.0.0/modules/lib/nanopb
+    revision: d148bd26718e4c10414f07a7eb1bd24c62e56c5d
+  - path: C:/ncs/v2.0.0/tools/net-tools
+    revision: f49bd1354616fae4093bf36e5eaee43c51a55127
+  - path: C:/ncs/v2.0.0/modules/bsim_hw_models/nrf_hw_models
+    revision: b8cea37dbdc8fc58cc14b4e19fa850877a9da520
+  - path: C:/ncs/v2.0.0/modules/lib/open-amp
+    revision: cfd050ff38a9d028dc211690b2ec35971128e45e
+  - path: C:/ncs/v2.0.0/modules/lib/openthread
+    revision: e2a765599aa0379d0f72f0149a9cbafec070c12d
+  - path: C:/ncs/v2.0.0/modules/debug/segger
+    revision: 3a52ab222133193802d3c3b4d21730b9b1f1d2f6
+  - path: C:/ncs/v2.0.0/modules/lib/tinycbor
+    revision: 9e1f34bc08123aaad7666d3652aaa839e8178b3b
+  - path: C:/ncs/v2.0.0/modules/crypto/tinycrypt
+    revision: 3e9a49d2672ec01435ffbf0d788db6d95ef28de0
+  - path: C:/ncs/v2.0.0/modules/debug/TraceRecorder
+    revision: e8ca3b6a83d19b2fc4738a0d9607190436e5e452
+  - path: C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests
+    revision: 52814181f0fde6d1422fac204d42cde30c62e40e
+  - path: C:/ncs/v2.0.0/modules/tee/tf-m/psa-arch-tests
+    revision: 4f45df539d3d98b6e38e112be9936be4a2b8a97c
+  - path: C:/ncs/v2.0.0/modules/lib/zscilib
+    revision: 12bfe3f0a9fcbfe3edab7eabc9678b6c62875d34
+workspace:
+  dirty: true
+  extra: false
+  'off': true
+zephyr:
+  path: C:/ncs/v2.0.0/zephyr
+  revision: 0a904d0c176acf67ab10285e42f4d1924bc5bb79

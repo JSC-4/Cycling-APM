@@ -1,0 +1,1257 @@
+Archive member included to satisfy reference by file (symbol)
+
+platform/libplatform_ns.a(dummy_uart_stdout.o)
+                              app/CMakeFiles/tfm_ns.dir/main_ns.o (stdio_init)
+app/libtfm_api_ns.a(tfm_ns_interface.o)
+                              app/CMakeFiles/tfm_ns.dir/main_ns.o (tfm_ns_interface_init)
+ns_log/libtfm_ns_log.a(tfm_log_raw.o)
+                              app/CMakeFiles/tfm_ns.dir/main_ns.o (tfm_log_printf)
+C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(irq_armv8mml.o)
+                              app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Source/rtx_lib.o (irqRtxLib)
+C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_system.o)
+                              C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(irq_armv8mml.o) (osRtxTick_Handler)
+C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+                              app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o (osMessageQueueNew)
+C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+                              C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o) (osRtxMemoryPoolInit)
+C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_memory.o)
+                              C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o) (osRtxMemoryAlloc)
+C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_semaphore.o)
+                              app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o (osSemaphoreNew)
+C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mutex.o)
+                              app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o (osMutexNew)
+C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+                              app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o (osThreadExit)
+C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+                              app/CMakeFiles/tfm_ns.dir/main_ns.o (osKernelInitialize)
+C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(os_systick.o)
+                              C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o) (OS_Tick_Setup)
+C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_timer.o)
+                              C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o) (osRtxTimerThread)
+platform/libplatform_ns.a(system_nrf9160.o)
+                              C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(os_systick.o) (SystemCoreClock)
+c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-exit.o)
+                              c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp/crt0.o (exit)
+c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-impure.o)
+                              c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-exit.o) (_global_impure_ptr)
+c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-init.o)
+                              c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp/crt0.o (__libc_init_array)
+c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-memcpy-stub.o)
+                              C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o) (memcpy)
+c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-memset.o)
+                              c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp/crt0.o (memset)
+c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libnosys.a(_exit.o)
+                              c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-exit.o) (_exit)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp/crti.o
+ .data          0x0000000000000000        0x0 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp/crti.o
+ .bss           0x0000000000000000        0x0 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp/crti.o
+ .data          0x0000000000000000        0x4 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp/crtbegin.o
+ .rodata        0x0000000000000000       0x24 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp/crtbegin.o
+ .data          0x0000000000000000        0x0 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp/crt0.o
+ .bss           0x0000000000000000        0x0 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp/crt0.o
+ .ARM.extab     0x0000000000000000        0x0 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp/crt0.o
+ .text          0x0000000000000000        0x0 app/CMakeFiles/tfm_ns.dir/main_ns.o
+ .data          0x0000000000000000        0x0 app/CMakeFiles/tfm_ns.dir/main_ns.o
+ .bss           0x0000000000000000        0x0 app/CMakeFiles/tfm_ns.dir/main_ns.o
+ .text.tfm_ns_platform_uninit
+                0x0000000000000000        0xa app/CMakeFiles/tfm_ns.dir/main_ns.o
+ .data          0x0000000000000000        0x0 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/trusted-firmware-m/platform/ext/target/nordic_nrf/common/nrf9160/gcc/startup_nrf9160_ns.o
+ .bss           0x0000000000000000        0x0 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/trusted-firmware-m/platform/ext/target/nordic_nrf/common/nrf9160/gcc/startup_nrf9160_ns.o
+ .text          0x0000000000000000        0x0 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/ns_interface/ns_client_ext/tz_shim_layer.o
+ .data          0x0000000000000000        0x0 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/ns_interface/ns_client_ext/tz_shim_layer.o
+ .bss           0x0000000000000000        0x0 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/ns_interface/ns_client_ext/tz_shim_layer.o
+ .text          0x0000000000000000        0x0 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Config/RTX_Config.o
+ .data          0x0000000000000000        0x0 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Config/RTX_Config.o
+ .bss           0x0000000000000000        0x0 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Config/RTX_Config.o
+ .text          0x0000000000000000        0x0 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+ .data          0x0000000000000000        0x0 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+ .bss           0x0000000000000000        0x0 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+ .data.irqRtxLibRef
+                0x0000000000000000        0x4 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+ .text          0x0000000000000000        0x0 app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o
+ .data          0x0000000000000000        0x0 app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o
+ .bss           0x0000000000000000        0x0 app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o
+ .text.os_wrapper_thread_new
+                0x0000000000000000       0x36 app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o
+ .text.os_wrapper_semaphore_create
+                0x0000000000000000       0x18 app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o
+ .text.os_wrapper_semaphore_acquire
+                0x0000000000000000       0x10 app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o
+ .text.os_wrapper_semaphore_release
+                0x0000000000000000       0x10 app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o
+ .text.os_wrapper_semaphore_delete
+                0x0000000000000000       0x10 app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o
+ .text.os_wrapper_mutex_acquire
+                0x0000000000000000       0x18 app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o
+ .text.os_wrapper_mutex_release
+                0x0000000000000000       0x18 app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o
+ .text.os_wrapper_mutex_delete
+                0x0000000000000000       0x18 app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o
+ .text.os_wrapper_thread_get_handle
+                0x0000000000000000        0x4 app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o
+ .text.os_wrapper_thread_get_priority
+                0x0000000000000000       0x12 app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o
+ .text.os_wrapper_thread_exit
+                0x0000000000000000        0x6 app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o
+ .text.os_wrapper_thread_set_flag
+                0x0000000000000000        0xa app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o
+ .text.os_wrapper_thread_set_flag_isr
+                0x0000000000000000        0x4 app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o
+ .text.os_wrapper_thread_wait_flag
+                0x0000000000000000        0xe app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o
+ .text.os_wrapper_get_tick
+                0x0000000000000000        0x4 app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o
+ .text.os_wrapper_msg_queue_create
+                0x0000000000000000        0xc app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o
+ .text.os_wrapper_msg_queue_send
+                0x0000000000000000       0x14 app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o
+ .text.os_wrapper_msg_queue_receive
+                0x0000000000000000       0x16 app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o
+ .text          0x0000000000000000        0x0 platform/libplatform_ns.a(dummy_uart_stdout.o)
+ .data          0x0000000000000000        0x0 platform/libplatform_ns.a(dummy_uart_stdout.o)
+ .bss           0x0000000000000000        0x0 platform/libplatform_ns.a(dummy_uart_stdout.o)
+ .text.stdio_uninit
+                0x0000000000000000        0x2 platform/libplatform_ns.a(dummy_uart_stdout.o)
+ .text          0x0000000000000000        0x0 app/libtfm_api_ns.a(tfm_ns_interface.o)
+ .data          0x0000000000000000        0x0 app/libtfm_api_ns.a(tfm_ns_interface.o)
+ .bss           0x0000000000000000        0x0 app/libtfm_api_ns.a(tfm_ns_interface.o)
+ .text.tfm_ns_interface_dispatch
+                0x0000000000000000       0x44 app/libtfm_api_ns.a(tfm_ns_interface.o)
+ .text          0x0000000000000000        0x0 ns_log/libtfm_ns_log.a(tfm_log_raw.o)
+ .data          0x0000000000000000        0x0 ns_log/libtfm_ns_log.a(tfm_log_raw.o)
+ .bss           0x0000000000000000        0x0 ns_log/libtfm_ns_log.a(tfm_log_raw.o)
+ .data          0x0000000000000000        0x0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(irq_armv8mml.o)
+ .bss           0x0000000000000000        0x0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(irq_armv8mml.o)
+ .rodata        0x0000000000000000        0x1 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(irq_armv8mml.o)
+ .ARM.extab     0x0000000000000000        0x0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(irq_armv8mml.o)
+ .text          0x0000000000000000        0x0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_system.o)
+ .data          0x0000000000000000        0x0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_system.o)
+ .bss           0x0000000000000000        0x0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_system.o)
+ .text          0x0000000000000000        0x0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+ .data          0x0000000000000000        0x0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+ .bss           0x0000000000000000        0x0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+ .text.svcRtxMessageQueueGetName
+                0x0000000000000000       0x10 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+ .text.svcRtxMessageQueueGetCapacity
+                0x0000000000000000       0x10 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+ .text.svcRtxMessageQueueGetMsgSize
+                0x0000000000000000       0x10 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+ .text.svcRtxMessageQueueGetCount
+                0x0000000000000000       0x10 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+ .text.svcRtxMessageQueueGetSpace
+                0x0000000000000000       0x14 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+ .text.svcRtxMessageQueueDelete
+                0x0000000000000000       0x74 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+ .text.svcRtxMessageQueueReset
+                0x0000000000000000      0x198 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+ .text.osMessageQueueGetName
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+ .text.osMessageQueueGetCapacity
+                0x0000000000000000       0x34 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+ .text.osMessageQueueGetMsgSize
+                0x0000000000000000       0x34 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+ .text.osMessageQueueGetCount
+                0x0000000000000000       0x34 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+ .text.osMessageQueueGetSpace
+                0x0000000000000000       0x38 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+ .text.osMessageQueueReset
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+ .text.osMessageQueueDelete
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+ .text          0x0000000000000000        0x0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+ .data          0x0000000000000000        0x0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+ .bss           0x0000000000000000        0x0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+ .text.svcRtxMemoryPoolGetName
+                0x0000000000000000       0x10 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+ .text.svcRtxMemoryPoolGetCapacity
+                0x0000000000000000       0x10 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+ .text.svcRtxMemoryPoolGetBlockSize
+                0x0000000000000000       0x10 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+ .text.svcRtxMemoryPoolGetCount
+                0x0000000000000000       0x10 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+ .text.svcRtxMemoryPoolGetSpace
+                0x0000000000000000       0x14 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+ .text.svcRtxMemoryPoolAlloc
+                0x0000000000000000       0x60 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+ .text.osRtxMemoryPoolPostProcess
+                0x0000000000000000       0x48 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+ .text.svcRtxMemoryPoolFree
+                0x0000000000000000       0x88 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+ .text.svcRtxMemoryPoolDelete
+                0x0000000000000000       0xac C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+ .text.svcRtxMemoryPoolNew
+                0x0000000000000000      0x224 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+ .text.osMemoryPoolNew
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+ .text.osMemoryPoolGetName
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+ .text.osMemoryPoolAlloc
+                0x0000000000000000       0x6c C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+ .text.osMemoryPoolFree
+                0x0000000000000000       0x80 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+ .text.osMemoryPoolGetCapacity
+                0x0000000000000000       0x34 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+ .text.osMemoryPoolGetBlockSize
+                0x0000000000000000       0x34 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+ .text.osMemoryPoolGetCount
+                0x0000000000000000       0x34 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+ .text.osMemoryPoolGetSpace
+                0x0000000000000000       0x38 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+ .text.osMemoryPoolDelete
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+ .text          0x0000000000000000        0x0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_memory.o)
+ .data          0x0000000000000000        0x0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_memory.o)
+ .bss           0x0000000000000000        0x0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_memory.o)
+ .text          0x0000000000000000        0x0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_semaphore.o)
+ .data          0x0000000000000000        0x0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_semaphore.o)
+ .bss           0x0000000000000000        0x0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_semaphore.o)
+ .text.svcRtxSemaphoreGetName
+                0x0000000000000000       0x10 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_semaphore.o)
+ .text.svcRtxSemaphoreGetCount
+                0x0000000000000000       0x10 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_semaphore.o)
+ .text.svcRtxSemaphoreNew
+                0x0000000000000000       0x7c C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_semaphore.o)
+ .text.osRtxSemaphorePostProcess
+                0x0000000000000000       0x38 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_semaphore.o)
+ .text.svcRtxSemaphoreRelease
+                0x0000000000000000       0x54 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_semaphore.o)
+ .text.svcRtxSemaphoreAcquire
+                0x0000000000000000       0x60 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_semaphore.o)
+ .text.svcRtxSemaphoreDelete
+                0x0000000000000000       0x60 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_semaphore.o)
+ .text.osSemaphoreNew
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_semaphore.o)
+ .text.osSemaphoreGetName
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_semaphore.o)
+ .text.osSemaphoreAcquire
+                0x0000000000000000       0x60 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_semaphore.o)
+ .text.osSemaphoreRelease
+                0x0000000000000000       0x68 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_semaphore.o)
+ .text.osSemaphoreGetCount
+                0x0000000000000000       0x34 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_semaphore.o)
+ .text.osSemaphoreDelete
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_semaphore.o)
+ .debug_info    0x0000000000000000     0x3120 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_semaphore.o)
+ .debug_abbrev  0x0000000000000000      0x4b3 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_semaphore.o)
+ .debug_loc     0x0000000000000000     0x1131 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_semaphore.o)
+ .debug_aranges
+                0x0000000000000000       0x80 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_semaphore.o)
+ .debug_ranges  0x0000000000000000      0x2d8 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_semaphore.o)
+ .debug_line    0x0000000000000000      0xc31 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_semaphore.o)
+ .debug_str     0x0000000000000000     0x1441 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_semaphore.o)
+ .comment       0x0000000000000000       0x76 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_semaphore.o)
+ .debug_frame   0x0000000000000000      0x144 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_semaphore.o)
+ .ARM.attributes
+                0x0000000000000000       0x32 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_semaphore.o)
+ .text          0x0000000000000000        0x0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mutex.o)
+ .data          0x0000000000000000        0x0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mutex.o)
+ .bss           0x0000000000000000        0x0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mutex.o)
+ .text.svcRtxMutexGetName
+                0x0000000000000000       0x10 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mutex.o)
+ .text.svcRtxMutexAcquire
+                0x0000000000000000       0xa4 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mutex.o)
+ .text.svcRtxMutexRelease
+                0x0000000000000000       0xac C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mutex.o)
+ .text.svcRtxMutexDelete
+                0x0000000000000000       0xb4 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mutex.o)
+ .text.svcRtxMutexGetOwner
+                0x0000000000000000       0x18 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mutex.o)
+ .text.osMutexGetName
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mutex.o)
+ .text.osMutexAcquire
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mutex.o)
+ .text.osMutexRelease
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mutex.o)
+ .text.osMutexGetOwner
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mutex.o)
+ .text.osMutexDelete
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mutex.o)
+ .text          0x0000000000000000        0x0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .data          0x0000000000000000        0x0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .bss           0x0000000000000000        0x0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.svcRtxThreadGetName
+                0x0000000000000000       0x10 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.svcRtxThreadGetId
+                0x0000000000000000        0xc C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.svcRtxThreadGetState
+                0x0000000000000000       0x18 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.svcRtxThreadGetStackSize
+                0x0000000000000000       0x10 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.svcRtxThreadGetPriority
+                0x0000000000000000       0x1c C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.svcRtxThreadGetCount
+                0x0000000000000000       0x30 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.svcRtxThreadFlagsClear
+                0x0000000000000000       0x38 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.svcRtxThreadFlagsGet
+                0x0000000000000000       0x10 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.svcRtxThreadGetStackSpace
+                0x0000000000000000       0x54 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.svcRtxThreadEnumerate
+                0x0000000000000000       0x74 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.svcRtxThreadDetach
+                0x0000000000000000       0x54 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.osRtxThreadListSort
+                0x0000000000000000       0x6c C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.svcRtxThreadFlagsSet
+                0x0000000000000000      0x104 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.svcRtxThreadSetPriority
+                0x0000000000000000       0xa4 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.svcRtxThreadResume
+                0x0000000000000000       0x74 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.svcRtxThreadFlagsWait
+                0x0000000000000000      0x164 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.svcRtxThreadYield
+                0x0000000000000000       0x84 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.svcRtxThreadSuspend
+                0x0000000000000000       0xfc C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.svcRtxThreadTerminate
+                0x0000000000000000      0x194 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.svcRtxThreadJoin
+                0x0000000000000000       0xb0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.osThreadNew
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.osThreadGetName
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.osThreadGetId
+                0x0000000000000000       0x2c C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.osThreadGetState
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.osThreadGetStackSize
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.osThreadGetStackSpace
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.osThreadSetPriority
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.osThreadGetPriority
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.osThreadYield
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.osThreadSuspend
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.osThreadResume
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.osThreadDetach
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.osThreadJoin
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.osThreadTerminate
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.osThreadGetCount
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.osThreadEnumerate
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.osThreadFlagsSet
+                0x0000000000000000       0x68 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.osThreadFlagsClear
+                0x0000000000000000       0x28 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.osThreadFlagsGet
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.osThreadFlagsWait
+                0x0000000000000000       0x28 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text          0x0000000000000000        0x0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .data          0x0000000000000000        0x0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .bss           0x0000000000000000        0x0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .text.svcRtxKernelGetState
+                0x0000000000000000        0xc C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .text.svcRtxKernelLock
+                0x0000000000000000       0x20 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .text.svcRtxKernelUnlock
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .text.svcRtxKernelGetTickCount
+                0x0000000000000000        0xc C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .text.svcRtxKernelGetTickFreq
+                0x0000000000000000        0xc C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .text.svcRtxKernelGetSysTimerCount
+                0x0000000000000000       0x34 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .text.svcRtxKernelGetSysTimerFreq
+                0x0000000000000000        0x4 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .text.svcRtxKernelRestoreLock
+                0x0000000000000000       0x28 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .text.svcRtxKernelSuspend
+                0x0000000000000000       0x54 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .text.svcRtxKernelResume
+                0x0000000000000000       0x90 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .text.svcRtxKernelGetInfo
+                0x0000000000000000       0x30 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .text.osKernelGetInfo
+                0x0000000000000000       0x64 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .text.osKernelGetState
+                0x0000000000000000       0x34 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .text.osKernelLock
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .text.osKernelUnlock
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .text.osKernelRestoreLock
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .text.osKernelSuspend
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .text.osKernelResume
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .text.osKernelGetTickCount
+                0x0000000000000000       0x2c C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .text.osKernelGetTickFreq
+                0x0000000000000000       0x2c C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .text.osKernelGetSysTimerCount
+                0x0000000000000000       0x4c C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .text.osKernelGetSysTimerFreq
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .text          0x0000000000000000        0x0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(os_systick.o)
+ .data          0x0000000000000000        0x0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(os_systick.o)
+ .text.OS_Tick_Disable
+                0x0000000000000000       0x2c C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(os_systick.o)
+ .text.OS_Tick_GetClock
+                0x0000000000000000        0xc C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(os_systick.o)
+ .text.OS_Tick_GetInterval
+                0x0000000000000000        0xc C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(os_systick.o)
+ .text.OS_Tick_GetCount
+                0x0000000000000000       0x10 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(os_systick.o)
+ .text.OS_Tick_GetOverflow
+                0x0000000000000000       0x10 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(os_systick.o)
+ .text          0x0000000000000000        0x0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_timer.o)
+ .data          0x0000000000000000        0x0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_timer.o)
+ .bss           0x0000000000000000        0x0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_timer.o)
+ .text.svcRtxTimerGetName
+                0x0000000000000000       0x10 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_timer.o)
+ .text.svcRtxTimerStop
+                0x0000000000000000       0x4c C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_timer.o)
+ .text.svcRtxTimerIsRunning
+                0x0000000000000000       0x1c C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_timer.o)
+ .text.svcRtxTimerNew
+                0x0000000000000000       0x80 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_timer.o)
+ .text.svcRtxTimerDelete
+                0x0000000000000000       0x68 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_timer.o)
+ .text.svcRtxTimerStart
+                0x0000000000000000       0xb8 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_timer.o)
+ .text.osTimerNew
+                0x0000000000000000       0x2c C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_timer.o)
+ .text.osTimerGetName
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_timer.o)
+ .text.osTimerStart
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_timer.o)
+ .text.osTimerStop
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_timer.o)
+ .text.osTimerIsRunning
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_timer.o)
+ .text.osTimerDelete
+                0x0000000000000000       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_timer.o)
+ .text          0x0000000000000000        0x0 platform/libplatform_ns.a(system_nrf9160.o)
+ .data          0x0000000000000000        0x0 platform/libplatform_ns.a(system_nrf9160.o)
+ .bss           0x0000000000000000        0x0 platform/libplatform_ns.a(system_nrf9160.o)
+ .text.SystemCoreClockUpdate
+                0x0000000000000000       0x10 platform/libplatform_ns.a(system_nrf9160.o)
+ .text.SystemInit
+                0x0000000000000000       0x10 platform/libplatform_ns.a(system_nrf9160.o)
+ .text.SystemStoreFICRNS
+                0x0000000000000000       0x38 platform/libplatform_ns.a(system_nrf9160.o)
+ .text.SystemLockFICRNS
+                0x0000000000000000       0x24 platform/libplatform_ns.a(system_nrf9160.o)
+ .text          0x0000000000000000        0x0 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-exit.o)
+ .data          0x0000000000000000        0x0 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-exit.o)
+ .bss           0x0000000000000000        0x0 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-exit.o)
+ .text          0x0000000000000000        0x0 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-impure.o)
+ .data          0x0000000000000000        0x0 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-impure.o)
+ .bss           0x0000000000000000        0x0 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x0000000000000000        0x4 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-impure.o)
+ .text          0x0000000000000000        0x0 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-init.o)
+ .data          0x0000000000000000        0x0 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-init.o)
+ .bss           0x0000000000000000        0x0 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-init.o)
+ .text          0x0000000000000000        0x0 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-memcpy-stub.o)
+ .data          0x0000000000000000        0x0 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-memcpy-stub.o)
+ .bss           0x0000000000000000        0x0 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-memcpy-stub.o)
+ .text          0x0000000000000000        0x0 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-memset.o)
+ .text          0x0000000000000000        0x0 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp/crtend.o
+ .data          0x0000000000000000        0x0 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp/crtend.o
+ .bss           0x0000000000000000        0x0 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp/crtend.o
+ .rodata        0x0000000000000000       0x24 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp/crtend.o
+ .text          0x0000000000000000        0x0 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp/crtn.o
+ .data          0x0000000000000000        0x0 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp/crtn.o
+ .bss           0x0000000000000000        0x0 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp/crtn.o
+ .text          0x0000000000000000        0x0 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libnosys.a(_exit.o)
+ .data          0x0000000000000000        0x0 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libnosys.a(_exit.o)
+ .bss           0x0000000000000000        0x0 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libnosys.a(_exit.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x000000000001c200 0x000000000005be00 xr
+RAM              0x0000000020010000 0x0000000000030000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp/crti.o
+LOAD c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp/crtbegin.o
+LOAD c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp/crt0.o
+LOAD app/CMakeFiles/tfm_ns.dir/main_ns.o
+LOAD app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/trusted-firmware-m/platform/ext/target/nordic_nrf/common/nrf9160/gcc/startup_nrf9160_ns.o
+LOAD app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/ns_interface/ns_client_ext/tz_shim_layer.o
+LOAD app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Config/RTX_Config.o
+LOAD app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+LOAD app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o
+LOAD platform/libplatform_ns.a
+LOAD app/libtfm_api_ns.a
+LOAD ns_log/libtfm_ns_log.a
+LOAD C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a
+LOAD secure_fw/libtfm_s_veneers.a
+LOAD platform/libplatform_ns.a
+START GROUP
+LOAD c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp\libgcc.a
+LOAD c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a
+END GROUP
+START GROUP
+LOAD c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp\libgcc.a
+LOAD c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a
+END GROUP
+LOAD c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp/crtend.o
+LOAD c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp/crtn.o
+                0x0000000000001000                __heap_size__ = 0x1000
+                0x0000000000000140                __psp_stack_size__ = 0x140
+                0x00000000000000a0                __msp_stack_size__ = 0xa0
+START GROUP
+LOAD c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp\libgcc.a
+LOAD c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc.a
+LOAD c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libm.a
+LOAD c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libnosys.a
+END GROUP
+
+.text           0x000000000001c200     0x20b4
+ *(.vectors)
+ .vectors       0x000000000001c200      0x144 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/trusted-firmware-m/platform/ext/target/nordic_nrf/common/nrf9160/gcc/startup_nrf9160_ns.o
+                0x000000000001c200                __Vectors
+                0x000000000001c344                __Vectors_End = .
+                0x000000000001c344                __Vectors_Size = (__Vectors_End - __Vectors)
+                0x0000000020012680                __end__ = .
+ *(.text*)
+ .text          0x000000000001c344       0x40 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp/crtbegin.o
+ .text          0x000000000001c384       0x7c c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp/crt0.o
+                0x000000000001c384                _stack_init
+                0x000000000001c38c                _start
+                0x000000000001c38c                _mainCRTStartup
+ .text.tfm_ns_platform_init
+                0x000000000001c400        0xa app/CMakeFiles/tfm_ns.dir/main_ns.o
+                0x000000000001c400                tfm_ns_platform_init
+ *fill*         0x000000000001c40a        0x2 
+ .text.startup.main
+                0x000000000001c40c       0x24 app/CMakeFiles/tfm_ns.dir/main_ns.o
+                0x000000000001c40c                main
+ .text          0x000000000001c430       0xd4 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/trusted-firmware-m/platform/ext/target/nordic_nrf/common/nrf9160/gcc/startup_nrf9160_ns.o
+                0x000000000001c430                Reset_Handler
+                0x000000000001c46c                Default_Handler
+                0x000000000001c46e                NMI_Handler
+                0x000000000001c472                HardFault_Handler
+                0x000000000001c476                MemManage_Handler
+                0x000000000001c47a                BusFault_Handler
+                0x000000000001c47e                UsageFault_Handler
+                0x000000000001c486                DebugMon_Handler
+                0x000000000001c492                CLOCK_POWER_IRQHandler
+                0x000000000001c496                UARTE0_SPIM0_SPIS0_TWIM0_TWIS0_IRQHandler
+                0x000000000001c49a                UARTE1_SPIM1_SPIS1_TWIM1_TWIS1_IRQHandler
+                0x000000000001c49e                UARTE2_SPIM2_SPIS2_TWIM2_TWIS2_IRQHandler
+                0x000000000001c4a2                UARTE3_SPIM3_SPIS3_TWIM3_TWIS3_IRQHandler
+                0x000000000001c4a6                SAADC_IRQHandler
+                0x000000000001c4aa                TIMER0_IRQHandler
+                0x000000000001c4ae                TIMER1_Handler
+                0x000000000001c4b2                TIMER2_IRQHandler
+                0x000000000001c4b6                RTC0_IRQHandler
+                0x000000000001c4ba                RTC1_IRQHandler
+                0x000000000001c4be                WDT_IRQHandler
+                0x000000000001c4c2                EGU0_IRQHandler
+                0x000000000001c4c6                EGU1_IRQHandler
+                0x000000000001c4ca                EGU2_IRQHandler
+                0x000000000001c4ce                EGU3_IRQHandler
+                0x000000000001c4d2                EGU4_IRQHandler
+                0x000000000001c4d6                EGU5_IRQHandler
+                0x000000000001c4da                PWM0_IRQHandler
+                0x000000000001c4de                PWM1_IRQHandler
+                0x000000000001c4e2                PWM2_IRQHandler
+                0x000000000001c4e6                PWM3_IRQHandler
+                0x000000000001c4ea                PDM_IRQHandler
+                0x000000000001c4ee                I2S_IRQHandler
+                0x000000000001c4f2                IPC_IRQHandler
+                0x000000000001c4f6                FPU_IRQHandler
+                0x000000000001c4fa                GPIOTE1_IRQHandler
+                0x000000000001c4fe                KMU_IRQHandler
+ .text.TZ_InitContextSystem_S
+                0x000000000001c504        0x4 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/ns_interface/ns_client_ext/tz_shim_layer.o
+                0x000000000001c504                TZ_InitContextSystem_S
+ .text.TZ_AllocModuleContext_S
+                0x000000000001c508        0x4 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/ns_interface/ns_client_ext/tz_shim_layer.o
+                0x000000000001c508                TZ_AllocModuleContext_S
+ .text.TZ_FreeModuleContext_S
+                0x000000000001c50c        0x4 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/ns_interface/ns_client_ext/tz_shim_layer.o
+                0x000000000001c50c                TZ_FreeModuleContext_S
+ .text.TZ_LoadContext_S
+                0x000000000001c510        0x4 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/ns_interface/ns_client_ext/tz_shim_layer.o
+                0x000000000001c510                TZ_LoadContext_S
+ .text.TZ_StoreContext_S
+                0x000000000001c514        0x4 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/ns_interface/ns_client_ext/tz_shim_layer.o
+                0x000000000001c514                TZ_StoreContext_S
+ .text.osRtxIdleThread
+                0x000000000001c518        0x2 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Config/RTX_Config.o
+                0x000000000001c518                osRtxIdleThread
+ .text.osRtxErrorNotify
+                0x000000000001c51a        0x2 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Config/RTX_Config.o
+                0x000000000001c51a                osRtxErrorNotify
+ .text.software_init_hook
+                0x000000000001c51c        0x4 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+                0x000000000001c51c                software_init_hook
+ .text.os_wrapper_mutex_create
+                0x000000000001c520       0x1a app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o
+                0x000000000001c520                os_wrapper_mutex_create
+ .text.stdio_output_string
+                0x000000000001c53a        0x4 platform/libplatform_ns.a(dummy_uart_stdout.o)
+                0x000000000001c53a                stdio_output_string
+ .text.stdio_init
+                0x000000000001c53e        0x2 platform/libplatform_ns.a(dummy_uart_stdout.o)
+                0x000000000001c53e                stdio_init
+ .text.tfm_ns_interface_init
+                0x000000000001c540       0x1c app/libtfm_api_ns.a(tfm_ns_interface.o)
+                0x000000000001c540                tfm_ns_interface_init
+ .text._tfm_flush_formatted_buffer
+                0x000000000001c55c       0x1c ns_log/libtfm_ns_log.a(tfm_log_raw.o)
+ .text._tfm_dec_num_output
+                0x000000000001c578       0x5e ns_log/libtfm_ns_log.a(tfm_log_raw.o)
+ .text._tfm_hex_num_output
+                0x000000000001c5d6       0x3a ns_log/libtfm_ns_log.a(tfm_log_raw.o)
+ .text._tfm_string_output
+                0x000000000001c610       0x1a ns_log/libtfm_ns_log.a(tfm_log_raw.o)
+ *fill*         0x000000000001c62a        0x2 
+ .text.tfm_log_printf
+                0x000000000001c62c      0x110 ns_log/libtfm_ns_log.a(tfm_log_raw.o)
+                0x000000000001c62c                tfm_log_printf
+ .text          0x000000000001c73c      0x124 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(irq_armv8mml.o)
+                0x000000000001c73c                SVC_Handler
+                0x000000000001c7d8                PendSV_Handler
+                0x000000000001c7e6                SysTick_Handler
+                0x000000000001c7f4                Sys_Context
+ .text.osRtxTick_Handler
+                0x000000000001c860       0x74 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_system.o)
+                0x000000000001c860                osRtxTick_Handler
+ .text.osRtxPendSV_Handler
+                0x000000000001c8d4       0xa8 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_system.o)
+                0x000000000001c8d4                osRtxPendSV_Handler
+ .text.osRtxPostProcess
+                0x000000000001c97c       0x74 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_system.o)
+                0x000000000001c97c                osRtxPostProcess
+ .text.svcRtxMessageQueueNew
+                0x000000000001c9f0      0x16c C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+ .text.svcRtxMessageQueueGet
+                0x000000000001cb5c      0x188 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+ .text.svcRtxMessageQueuePut
+                0x000000000001cce4      0x108 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+ .text.osRtxMessageQueuePostProcess
+                0x000000000001cdec      0x154 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+ .text.osMessageQueueNew
+                0x000000000001cf40       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+                0x000000000001cf40                osMessageQueueNew
+ .text.osMessageQueuePut
+                0x000000000001cf64       0x7c C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+                0x000000000001cf64                osMessageQueuePut
+ .text.osMessageQueueGet
+                0x000000000001cfe0       0xbc C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+                0x000000000001cfe0                osMessageQueueGet
+ .text.osRtxMemoryPoolInit
+                0x000000000001d09c       0x48 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+                0x000000000001d09c                osRtxMemoryPoolInit
+ .text.osRtxMemoryPoolAlloc
+                0x000000000001d0e4       0x38 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+                0x000000000001d0e4                osRtxMemoryPoolAlloc
+ .text.osRtxMemoryPoolFree
+                0x000000000001d11c       0x4c C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+                0x000000000001d11c                osRtxMemoryPoolFree
+ .text.osRtxMemoryInit
+                0x000000000001d168       0x3c C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_memory.o)
+                0x000000000001d168                osRtxMemoryInit
+ .text.osRtxMemoryAlloc
+                0x000000000001d1a4       0x7c C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_memory.o)
+                0x000000000001d1a4                osRtxMemoryAlloc
+ .text.osRtxMemoryFree
+                0x000000000001d220       0x78 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_memory.o)
+                0x000000000001d220                osRtxMemoryFree
+ .text.svcRtxMutexNew
+                0x000000000001d298       0x6c C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mutex.o)
+ .text.osRtxMutexOwnerRelease
+                0x000000000001d304       0x44 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mutex.o)
+                0x000000000001d304                osRtxMutexOwnerRelease
+ .text.osMutexNew
+                0x000000000001d348       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mutex.o)
+                0x000000000001d348                osMutexNew
+ .text.osThreadExit
+                0x000000000001d36c        0xc C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+                0x000000000001d36c                osThreadExit
+ .text.osRtxThreadFree
+                0x000000000001d378       0x60 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.osRtxThreadPostProcess
+                0x000000000001d3d8      0x100 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.osRtxThreadListPut
+                0x000000000001d4d8       0x44 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+                0x000000000001d4d8                osRtxThreadListPut
+ .text.osRtxThreadListGet
+                0x000000000001d51c       0x14 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+                0x000000000001d51c                osRtxThreadListGet
+ .text.osRtxThreadListRemove
+                0x000000000001d530       0x14 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+                0x000000000001d530                osRtxThreadListRemove
+ .text.osRtxThreadReadyPut
+                0x000000000001d544       0x54 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+                0x000000000001d544                osRtxThreadReadyPut
+ .text.osRtxThreadDelayTick
+                0x000000000001d598       0x78 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+                0x000000000001d598                osRtxThreadDelayTick
+ .text.osRtxThreadRegPtr
+                0x000000000001d610        0x8 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+                0x000000000001d610                osRtxThreadRegPtr
+ .text.osRtxThreadStackCheck
+                0x000000000001d618       0x28 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+                0x000000000001d618                osRtxThreadStackCheck
+ .text.osRtxThreadSwitch
+                0x000000000001d640       0x14 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+                0x000000000001d640                osRtxThreadSwitch
+ .text.osRtxThreadDispatch
+                0x000000000001d654      0x120 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+                0x000000000001d654                osRtxThreadDispatch
+ .text.osRtxThreadWaitExit
+                0x000000000001d774       0x98 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+                0x000000000001d774                osRtxThreadWaitExit
+ .text.svcRtxThreadNew
+                0x000000000001d80c      0x2b0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.svcRtxThreadExit
+                0x000000000001dabc       0xf0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .text.osRtxThreadWaitEnter
+                0x000000000001dbac       0xb4 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+                0x000000000001dbac                osRtxThreadWaitEnter
+ .text.osRtxThreadStartup
+                0x000000000001dc60       0x40 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+                0x000000000001dc60                osRtxThreadStartup
+ .text.svcRtxKernelInitialize
+                0x000000000001dca0      0x16c C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .text.svcRtxKernelStart
+                0x000000000001de0c       0xa0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .text.osRtxKernelPreInit
+                0x000000000001deac        0x4 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+                0x000000000001deac                osRtxKernelPreInit
+ .text.osKernelInitialize
+                0x000000000001deb0       0x2c C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+                0x000000000001deb0                osKernelInitialize
+ .text.osKernelStart
+                0x000000000001dedc       0x24 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+                0x000000000001dedc                osKernelStart
+ .text.OS_Tick_Setup
+                0x000000000001df00       0x48 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(os_systick.o)
+                0x000000000001df00                OS_Tick_Setup
+ .text.OS_Tick_Enable
+                0x000000000001df48       0x2c C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(os_systick.o)
+                0x000000000001df48                OS_Tick_Enable
+ .text.OS_Tick_AcknowledgeIRQ
+                0x000000000001df74        0xc C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(os_systick.o)
+                0x000000000001df74                OS_Tick_AcknowledgeIRQ
+ .text.OS_Tick_GetIRQn
+                0x000000000001df80        0x8 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(os_systick.o)
+                0x000000000001df80                OS_Tick_GetIRQn
+ .text.osRtxTimerTick
+                0x000000000001df88       0xc8 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_timer.o)
+ .text.osRtxTimerThread
+                0x000000000001e050       0x3c C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_timer.o)
+                0x000000000001e050                osRtxTimerThread
+ .text.exit     0x000000000001e08c       0x28 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-exit.o)
+                0x000000000001e08c                exit
+ .text.__libc_init_array
+                0x000000000001e0b4       0x48 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-init.o)
+                0x000000000001e0b4                __libc_init_array
+ .text.memcpy   0x000000000001e0fc       0x1a c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-memcpy-stub.o)
+                0x000000000001e0fc                memcpy
+ .text.memset   0x000000000001e116       0x10 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-memset.o)
+                0x000000000001e116                memset
+ *fill*         0x000000000001e126        0x2 
+ .text._exit    0x000000000001e128        0x4 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libnosys.a(_exit.o)
+                0x000000000001e128                _exit
+ *(.init)
+ .init          0x000000000001e12c        0x4 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp/crti.o
+                0x000000000001e12c                _init
+ .init          0x000000000001e130        0x8 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp/crtn.o
+ *(.fini)
+ .fini          0x000000000001e138        0x4 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp/crti.o
+                0x000000000001e138                _fini
+ .fini          0x000000000001e13c        0x8 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp/crtn.o
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+ *(.rodata*)
+ .rodata.main.str1.1
+                0x000000000001e144       0x20 app/CMakeFiles/tfm_ns.dir/main_ns.o
+ .rodata        0x000000000001e164       0xa0 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+                0x000000000001e164                os_cb_sections
+                0x000000000001e19c                osRtxConfig
+ .rodata.osRtxUserSVC
+                0x000000000001e204        0x4 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+                0x000000000001e204                osRtxUserSVC
+ .rodata.os_idle_thread_attr
+                0x000000000001e208       0x24 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+ .rodata.os_timer_mq_attr
+                0x000000000001e22c       0x18 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+ .rodata.os_timer_thread_attr
+                0x000000000001e244       0x24 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+ .rodata.tfm_log_printf.str1.1
+                0x000000000001e268       0x15 ns_log/libtfm_ns_log.a(tfm_log_raw.o)
+ .rodata.hex_digits_lo
+                0x000000000001e27d       0x10 ns_log/libtfm_ns_log.a(tfm_log_raw.o)
+                0x000000000001e27d                hex_digits_lo
+ .rodata.hex_digits_up
+                0x000000000001e28d       0x10 ns_log/libtfm_ns_log.a(tfm_log_raw.o)
+                0x000000000001e28d                hex_digits_up
+ *fill*         0x000000000001e29d        0x3 
+ .rodata.str1.4
+                0x000000000001e2a0        0xb C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ *fill*         0x000000000001e2ab        0x1 
+ .rodata._global_impure_ptr
+                0x000000000001e2ac        0x4 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-impure.o)
+                0x000000000001e2ac                _global_impure_ptr
+ *(.eh_frame*)
+ .eh_frame      0x000000000001e2b0        0x0 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp/crtbegin.o
+ .eh_frame      0x000000000001e2b0        0x4 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp/crtend.o
+
+.glue_7         0x000000000001e2b4        0x0
+ .glue_7        0x000000000001e2b4        0x0 linker stubs
+
+.glue_7t        0x000000000001e2b4        0x0
+ .glue_7t       0x000000000001e2b4        0x0 linker stubs
+
+.vfp11_veneer   0x000000000001e2b4        0x0
+ .vfp11_veneer  0x000000000001e2b4        0x0 linker stubs
+
+.v4_bx          0x000000000001e2b4        0x0
+ .v4_bx         0x000000000001e2b4        0x0 linker stubs
+
+.iplt           0x000000000001e2b4        0x0
+ .iplt          0x000000000001e2b4        0x0 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp/crtbegin.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x000000000001e2b4                __exidx_start = .
+
+.ARM.exidx      0x000000000001e2b4        0x8
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+ .ARM.exidx     0x000000000001e2b4        0x8 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp/crt0.o
+                                         0x10 (size before relaxing)
+ .ARM.exidx     0x000000000001e2bc        0x0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(irq_armv8mml.o)
+                                         0x20 (size before relaxing)
+                0x000000000001e2bc                __exidx_end = .
+
+.rel.dyn        0x000000000001e2bc        0x0
+ .rel.iplt      0x000000000001e2bc        0x0 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp/crtbegin.o
+
+.copy.table     0x000000000001e2bc       0x18
+                0x000000000001e2bc                . = ALIGN (0x4)
+                0x000000000001e2bc                __copy_table_start__ = .
+                0x000000000001e2bc        0x4 LONG 0x1e2e4 __etext
+                0x000000000001e2c0        0x4 LONG 0x20010000 __data_start__
+                0x000000000001e2c4        0x4 LONG 0x110 (__data_end__ - __data_start__)
+                0x000000000001e2c8        0x4 LONG 0x0 DEFINED (__etext2)?__etext2:0x0
+                0x000000000001e2cc        0x4 LONG 0x0 DEFINED (__data2_start__)?__data2_start__:0x0
+                0x000000000001e2d0        0x4 LONG 0x0 DEFINED (__data2_start__)?(__data2_end__ - __data2_start__):0x0
+                0x000000000001e2d4                __copy_table_end__ = .
+
+.zero.table     0x000000000001e2d4       0x10
+                0x000000000001e2d4                . = ALIGN (0x4)
+                0x000000000001e2d4                __zero_table_start__ = .
+                0x000000000001e2d4        0x4 LONG 0x20010110 __bss_start__
+                0x000000000001e2d8        0x4 LONG 0x2378 (__bss_end__ - __bss_start__)
+                0x000000000001e2dc        0x4 LONG 0x0 DEFINED (__bss2_start__)?__bss2_start__:0x0
+                0x000000000001e2e0        0x4 LONG 0x0 DEFINED (__bss2_start__)?(__bss2_end__ - __bss2_start__):0x0
+                0x000000000001e2e4                __zero_table_end__ = .
+                0x000000000001e2e4                __etext = .
+
+.data           0x0000000020010000      0x110 load address 0x000000000001e2e4
+                0x0000000020010000                __data_start__ = .
+ *(vtable)
+ *(.data*)
+ .data.os       0x0000000020010000       0xa4 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+                0x0000000020010000                osRtxInfo
+ .data.SystemCoreClock
+                0x00000000200100a4        0x4 platform/libplatform_ns.a(system_nrf9160.o)
+                0x00000000200100a4                SystemCoreClock
+ .data.impure_data
+                0x00000000200100a8       0x60 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-impure.o)
+                0x0000000020010108                . = ALIGN (0x4)
+                0x0000000020010108                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x0000000020010108                PROVIDE (__preinit_array_end = .)
+                0x0000000020010108                . = ALIGN (0x4)
+                0x0000000020010108                PROVIDE (__init_array_start = .)
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array)
+ .init_array    0x0000000020010108        0x4 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp/crtbegin.o
+                0x000000002001010c                PROVIDE (__init_array_end = .)
+                0x000000002001010c                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__fini_array_start = .)
+ *(SORT_BY_NAME(.fini_array.*))
+ *(.fini_array)
+ .fini_array    0x000000002001010c        0x4 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp/crtbegin.o
+                [!provide]                        PROVIDE (__fini_array_end = .)
+ *(.jcr*)
+                0x0000000020010110                . = ALIGN (0x4)
+                0x0000000020010110                __data_end__ = .
+
+.igot.plt       0x0000000020010110        0x0 load address 0x000000000001e3f4
+ .igot.plt      0x0000000020010110        0x0 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp/crtbegin.o
+
+.bss            0x0000000020010110     0x2378 load address 0x000000000001e3f8
+                0x0000000020010110                . = ALIGN (0x4)
+                0x0000000020010110                __bss_start__ = .
+ *(.bss*)
+ .bss           0x0000000020010110       0x1c c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp/crtbegin.o
+ *fill*         0x000000002001012c        0x4 
+ .bss.os        0x0000000020010130     0x2040 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+ .bss.os.msgqueue.cb
+                0x0000000020012170       0x34 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+ .bss.os.msgqueue.mem
+                0x00000000200121a4       0x50 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+ .bss.os.thread.cb
+                0x00000000200121f4       0x88 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+ *fill*         0x000000002001227c        0x4 
+ .bss.os.thread.stack
+                0x0000000020012280      0x200 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+ .bss.ns_lock_handle
+                0x0000000020012480        0x4 app/libtfm_api_ns.a(tfm_ns_interface.o)
+ .bss           0x0000000020012484        0x1 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(os_systick.o)
+ *(COMMON)
+                0x0000000020012488                . = ALIGN (0x4)
+ *fill*         0x0000000020012485        0x3 
+                0x0000000020012488                __bss_end__ = .
+                0x0000000000002378                bss_size = (__bss_end__ - __bss_start__)
+
+.msp_stack      0x00000000200124a0       0xa0 load address 0x00000000000207a0
+                0x0000000020012540                . = (. + __msp_stack_size__)
+ *fill*         0x00000000200124a0       0xa0 
+                0x00000000200124a0                Image$$ARM_LIB_STACK_MSP$$ZI$$Base = ADDR (.msp_stack)
+                0x0000000020012540                Image$$ARM_LIB_STACK_MSP$$ZI$$Limit = (ADDR (.msp_stack) + SIZEOF (.msp_stack))
+
+.psp_stack      0x0000000020012540      0x140 load address 0x0000000000020840
+                0x0000000020012680                . = (. + __psp_stack_size__)
+ *fill*         0x0000000020012540      0x140 
+                0x0000000020012540                Image$$ARM_LIB_STACK$$ZI$$Base = ADDR (.psp_stack)
+                0x0000000020012680                Image$$ARM_LIB_STACK$$ZI$$Limit = (ADDR (.psp_stack) + SIZEOF (.psp_stack))
+
+.heap           0x0000000020012680     0x1000 load address 0x0000000000020980
+                0x0000000020012680                __end__ = .
+                [!provide]                        PROVIDE (end = .)
+                0x0000000020012680                __HeapBase = .
+                0x0000000020013680                . = (. + __heap_size__)
+ *fill*         0x0000000020012680     0x1000 
+                0x0000000020013680                __HeapLimit = .
+                0x0000000020013680                __heap_limit = .
+                0x0000000020012680                PROVIDE (__stack = Image$$ARM_LIB_STACK$$ZI$$Limit)
+OUTPUT(bin\tfm_ns.axf elf32-littlearm)
+LOAD linker stubs
+
+.ARM.attributes
+                0x0000000000000000       0x2e
+ .ARM.attributes
+                0x0000000000000000       0x22 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp/crti.o
+ .ARM.attributes
+                0x0000000000000022       0x32 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp/crtbegin.o
+ .ARM.attributes
+                0x0000000000000054       0x20 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp/crt0.o
+ .ARM.attributes
+                0x0000000000000074       0x32 app/CMakeFiles/tfm_ns.dir/main_ns.o
+ .ARM.attributes
+                0x00000000000000a6       0x20 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/trusted-firmware-m/platform/ext/target/nordic_nrf/common/nrf9160/gcc/startup_nrf9160_ns.o
+ .ARM.attributes
+                0x00000000000000c6       0x32 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/ns_interface/ns_client_ext/tz_shim_layer.o
+ .ARM.attributes
+                0x00000000000000f8       0x32 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Config/RTX_Config.o
+ .ARM.attributes
+                0x000000000000012a       0x32 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+ .ARM.attributes
+                0x000000000000015c       0x32 app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o
+ .ARM.attributes
+                0x000000000000018e       0x32 platform/libplatform_ns.a(dummy_uart_stdout.o)
+ .ARM.attributes
+                0x00000000000001c0       0x32 app/libtfm_api_ns.a(tfm_ns_interface.o)
+ .ARM.attributes
+                0x00000000000001f2       0x32 ns_log/libtfm_ns_log.a(tfm_log_raw.o)
+ .ARM.attributes
+                0x0000000000000224       0x20 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(irq_armv8mml.o)
+ .ARM.attributes
+                0x0000000000000244       0x32 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_system.o)
+ .ARM.attributes
+                0x0000000000000276       0x32 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+ .ARM.attributes
+                0x00000000000002a8       0x32 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+ .ARM.attributes
+                0x00000000000002da       0x32 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_memory.o)
+ .ARM.attributes
+                0x000000000000030c       0x32 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mutex.o)
+ .ARM.attributes
+                0x000000000000033e       0x32 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .ARM.attributes
+                0x0000000000000370       0x32 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .ARM.attributes
+                0x00000000000003a2       0x32 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(os_systick.o)
+ .ARM.attributes
+                0x00000000000003d4       0x32 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_timer.o)
+ .ARM.attributes
+                0x0000000000000406       0x32 platform/libplatform_ns.a(system_nrf9160.o)
+ .ARM.attributes
+                0x0000000000000438       0x32 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-exit.o)
+ .ARM.attributes
+                0x000000000000046a       0x32 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x000000000000049c       0x32 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x00000000000004ce       0x32 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x0000000000000500       0x32 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x0000000000000532       0x32 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp/crtend.o
+ .ARM.attributes
+                0x0000000000000564       0x22 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/thumb/v8-m.main/nofp/crtn.o
+ .ARM.attributes
+                0x0000000000000586       0x32 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libnosys.a(_exit.o)
+
+.comment        0x0000000000000000       0x95
+ .comment       0x0000000000000000       0x20 app/CMakeFiles/tfm_ns.dir/main_ns.o
+                                         0x21 (size before relaxing)
+ .comment       0x0000000000000020       0x21 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/ns_interface/ns_client_ext/tz_shim_layer.o
+ .comment       0x0000000000000020       0x21 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Config/RTX_Config.o
+ .comment       0x0000000000000020       0x21 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+ .comment       0x0000000000000020       0x21 app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o
+ .comment       0x0000000000000020       0x21 platform/libplatform_ns.a(dummy_uart_stdout.o)
+ .comment       0x0000000000000020       0x21 app/libtfm_api_ns.a(tfm_ns_interface.o)
+ .comment       0x0000000000000020       0x21 ns_log/libtfm_ns_log.a(tfm_log_raw.o)
+ .comment       0x0000000000000020       0x75 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_system.o)
+                                         0x76 (size before relaxing)
+ .comment       0x0000000000000095       0x76 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+ .comment       0x0000000000000095       0x76 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+ .comment       0x0000000000000095       0x76 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_memory.o)
+ .comment       0x0000000000000095       0x76 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mutex.o)
+ .comment       0x0000000000000095       0x76 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .comment       0x0000000000000095       0x76 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .comment       0x0000000000000095       0x76 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(os_systick.o)
+ .comment       0x0000000000000095       0x76 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_timer.o)
+ .comment       0x0000000000000095       0x21 platform/libplatform_ns.a(system_nrf9160.o)
+
+.debug_info     0x0000000000000000    0x20158
+ .debug_info    0x0000000000000000      0x173 app/CMakeFiles/tfm_ns.dir/main_ns.o
+ .debug_info    0x0000000000000173       0x26 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/trusted-firmware-m/platform/ext/target/nordic_nrf/common/nrf9160/gcc/startup_nrf9160_ns.o
+ .debug_info    0x0000000000000199      0x141 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/ns_interface/ns_client_ext/tz_shim_layer.o
+ .debug_info    0x00000000000002da       0xf7 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Config/RTX_Config.o
+ .debug_info    0x00000000000003d1      0xba5 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+ .debug_info    0x0000000000000f76      0xbf9 app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o
+ .debug_info    0x0000000000001b6f       0xec platform/libplatform_ns.a(dummy_uart_stdout.o)
+ .debug_info    0x0000000000001c5b      0x20e app/libtfm_api_ns.a(tfm_ns_interface.o)
+ .debug_info    0x0000000000001e69      0x583 ns_log/libtfm_ns_log.a(tfm_log_raw.o)
+ .debug_info    0x00000000000023ec       0x26 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(irq_armv8mml.o)
+ .debug_info    0x0000000000002412     0x2487 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_system.o)
+ .debug_info    0x0000000000004899     0x442b C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+ .debug_info    0x0000000000008cc4     0x3fb7 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+ .debug_info    0x000000000000cc7b     0x1ffe C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_memory.o)
+ .debug_info    0x000000000000ec79     0x2b74 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mutex.o)
+ .debug_info    0x00000000000117ed     0x6ec8 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .debug_info    0x00000000000186b5     0x3ed0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .debug_info    0x000000000001c585      0x688 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(os_systick.o)
+ .debug_info    0x000000000001cc0d     0x2c72 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_timer.o)
+ .debug_info    0x000000000001f87f      0x8d9 platform/libplatform_ns.a(system_nrf9160.o)
+
+.debug_abbrev   0x0000000000000000     0x3549
+ .debug_abbrev  0x0000000000000000       0xa1 app/CMakeFiles/tfm_ns.dir/main_ns.o
+ .debug_abbrev  0x00000000000000a1       0x14 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/trusted-firmware-m/platform/ext/target/nordic_nrf/common/nrf9160/gcc/startup_nrf9160_ns.o
+ .debug_abbrev  0x00000000000000b5       0xbb app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/ns_interface/ns_client_ext/tz_shim_layer.o
+ .debug_abbrev  0x0000000000000170       0x8f app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Config/RTX_Config.o
+ .debug_abbrev  0x00000000000001ff      0x1b7 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+ .debug_abbrev  0x00000000000003b6      0x23f app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o
+ .debug_abbrev  0x00000000000005f5       0xc0 platform/libplatform_ns.a(dummy_uart_stdout.o)
+ .debug_abbrev  0x00000000000006b5      0x108 app/libtfm_api_ns.a(tfm_ns_interface.o)
+ .debug_abbrev  0x00000000000007bd      0x273 ns_log/libtfm_ns_log.a(tfm_log_raw.o)
+ .debug_abbrev  0x0000000000000a30       0x14 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(irq_armv8mml.o)
+ .debug_abbrev  0x0000000000000a44      0x3f1 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_system.o)
+ .debug_abbrev  0x0000000000000e35      0x578 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+ .debug_abbrev  0x00000000000013ad      0x572 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+ .debug_abbrev  0x000000000000191f      0x33d C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_memory.o)
+ .debug_abbrev  0x0000000000001c5c      0x48a C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mutex.o)
+ .debug_abbrev  0x00000000000020e6      0x5de C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .debug_abbrev  0x00000000000026c4      0x5cb C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .debug_abbrev  0x0000000000002c8f      0x1b0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(os_systick.o)
+ .debug_abbrev  0x0000000000002e3f      0x525 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_timer.o)
+ .debug_abbrev  0x0000000000003364      0x1e5 platform/libplatform_ns.a(system_nrf9160.o)
+
+.debug_aranges  0x0000000000000000      0x868
+ .debug_aranges
+                0x0000000000000000       0x30 app/CMakeFiles/tfm_ns.dir/main_ns.o
+ .debug_aranges
+                0x0000000000000030       0x20 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/trusted-firmware-m/platform/ext/target/nordic_nrf/common/nrf9160/gcc/startup_nrf9160_ns.o
+ .debug_aranges
+                0x0000000000000050       0x28 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/ns_interface/ns_client_ext/tz_shim_layer.o
+ .debug_aranges
+                0x0000000000000078       0x28 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Config/RTX_Config.o
+ .debug_aranges
+                0x00000000000000a0       0x20 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+ .debug_aranges
+                0x00000000000000c0       0xa8 app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o
+ .debug_aranges
+                0x0000000000000168       0x28 platform/libplatform_ns.a(dummy_uart_stdout.o)
+ .debug_aranges
+                0x0000000000000190       0x28 app/libtfm_api_ns.a(tfm_ns_interface.o)
+ .debug_aranges
+                0x00000000000001b8       0x40 ns_log/libtfm_ns_log.a(tfm_log_raw.o)
+ .debug_aranges
+                0x00000000000001f8       0x20 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(irq_armv8mml.o)
+ .debug_aranges
+                0x0000000000000218       0x30 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_system.o)
+ .debug_aranges
+                0x0000000000000248       0xc0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+ .debug_aranges
+                0x0000000000000308       0xc8 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+ .debug_aranges
+                0x00000000000003d0       0x30 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_memory.o)
+ .debug_aranges
+                0x0000000000000400       0x80 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mutex.o)
+ .debug_aranges
+                0x0000000000000480      0x1e0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .debug_aranges
+                0x0000000000000660       0xf0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .debug_aranges
+                0x0000000000000750       0x60 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(os_systick.o)
+ .debug_aranges
+                0x00000000000007b0       0x88 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_timer.o)
+ .debug_aranges
+                0x0000000000000838       0x30 platform/libplatform_ns.a(system_nrf9160.o)
+
+.debug_ranges   0x0000000000000000     0x26d8
+ .debug_ranges  0x0000000000000000       0x20 app/CMakeFiles/tfm_ns.dir/main_ns.o
+ .debug_ranges  0x0000000000000020       0x18 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/ns_interface/ns_client_ext/tz_shim_layer.o
+ .debug_ranges  0x0000000000000038       0x18 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Config/RTX_Config.o
+ .debug_ranges  0x0000000000000050       0x10 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+ .debug_ranges  0x0000000000000060       0x98 app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o
+ .debug_ranges  0x00000000000000f8       0x18 platform/libplatform_ns.a(dummy_uart_stdout.o)
+ .debug_ranges  0x0000000000000110       0x18 app/libtfm_api_ns.a(tfm_ns_interface.o)
+ .debug_ranges  0x0000000000000128       0x60 ns_log/libtfm_ns_log.a(tfm_log_raw.o)
+ .debug_ranges  0x0000000000000188       0xe8 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_system.o)
+ .debug_ranges  0x0000000000000270      0x5f8 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+ .debug_ranges  0x0000000000000868      0x5a8 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+ .debug_ranges  0x0000000000000e10       0xa0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_memory.o)
+ .debug_ranges  0x0000000000000eb0      0x180 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mutex.o)
+ .debug_ranges  0x0000000000001030     0x1048 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .debug_ranges  0x0000000000002078      0x3f0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .debug_ranges  0x0000000000002468       0x50 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(os_systick.o)
+ .debug_ranges  0x00000000000024b8      0x200 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_timer.o)
+ .debug_ranges  0x00000000000026b8       0x20 platform/libplatform_ns.a(system_nrf9160.o)
+
+.debug_line     0x0000000000000000     0xc212
+ .debug_line    0x0000000000000000      0x2b0 app/CMakeFiles/tfm_ns.dir/main_ns.o
+ .debug_line    0x00000000000002b0       0xec app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/trusted-firmware-m/platform/ext/target/nordic_nrf/common/nrf9160/gcc/startup_nrf9160_ns.o
+ .debug_line    0x000000000000039c      0x1d2 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/ns_interface/ns_client_ext/tz_shim_layer.o
+ .debug_line    0x000000000000056e      0x196 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Config/RTX_Config.o
+ .debug_line    0x0000000000000704      0x1f4 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+ .debug_line    0x00000000000008f8      0x572 app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o
+ .debug_line    0x0000000000000e6a      0x164 platform/libplatform_ns.a(dummy_uart_stdout.o)
+ .debug_line    0x0000000000000fce      0x285 app/libtfm_api_ns.a(tfm_ns_interface.o)
+ .debug_line    0x0000000000001253      0x504 ns_log/libtfm_ns_log.a(tfm_log_raw.o)
+ .debug_line    0x0000000000001757       0xc2 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(irq_armv8mml.o)
+ .debug_line    0x0000000000001819      0x57a C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_system.o)
+ .debug_line    0x0000000000001d93     0x1b10 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+ .debug_line    0x00000000000038a3     0x1564 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+ .debug_line    0x0000000000004e07      0x5b1 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_memory.o)
+ .debug_line    0x00000000000053b8      0xc29 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mutex.o)
+ .debug_line    0x0000000000005fe1     0x3c28 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .debug_line    0x0000000000009c09     0x138b C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .debug_line    0x000000000000af94      0x376 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(os_systick.o)
+ .debug_line    0x000000000000b30a      0xcab C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_timer.o)
+ .debug_line    0x000000000000bfb5      0x25d platform/libplatform_ns.a(system_nrf9160.o)
+
+.debug_str      0x0000000000000000     0x3acc
+ .debug_str     0x0000000000000000      0x215 app/CMakeFiles/tfm_ns.dir/main_ns.o
+                                        0x256 (size before relaxing)
+ .debug_str     0x0000000000000215       0x87 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/trusted-firmware-m/platform/ext/target/nordic_nrf/common/nrf9160/gcc/startup_nrf9160_ns.o
+                                         0xc4 (size before relaxing)
+ .debug_str     0x000000000000029c       0xe5 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/ns_interface/ns_client_ext/tz_shim_layer.o
+                                        0x26d (size before relaxing)
+ .debug_str     0x0000000000000381       0x87 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Config/RTX_Config.o
+                                        0x218 (size before relaxing)
+ .debug_str     0x0000000000000408      0x9b7 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+                                        0xc0b (size before relaxing)
+ .debug_str     0x0000000000000dbf      0x4b9 app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o
+                                        0xb06 (size before relaxing)
+ .debug_str     0x0000000000001278       0x58 platform/libplatform_ns.a(dummy_uart_stdout.o)
+                                        0x1fc (size before relaxing)
+ .debug_str     0x00000000000012d0       0x88 app/libtfm_api_ns.a(tfm_ns_interface.o)
+                                        0x294 (size before relaxing)
+ .debug_str     0x0000000000001358      0x116 ns_log/libtfm_ns_log.a(tfm_log_raw.o)
+                                        0x30d (size before relaxing)
+ .debug_str     0x000000000000146e       0x6e C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(irq_armv8mml.o)
+ .debug_str     0x00000000000014dc      0x99f C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_system.o)
+                                       0x12ca (size before relaxing)
+ .debug_str     0x0000000000001e7b      0x534 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+                                       0x1620 (size before relaxing)
+ .debug_str     0x00000000000023af      0x36e C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+                                       0x159d (size before relaxing)
+ .debug_str     0x000000000000271d       0x83 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_memory.o)
+                                       0x104a (size before relaxing)
+ .debug_str     0x00000000000027a0      0x171 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mutex.o)
+                                       0x1370 (size before relaxing)
+ .debug_str     0x0000000000002911      0x683 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+                                       0x1a88 (size before relaxing)
+ .debug_str     0x0000000000002f94      0x478 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+                                       0x1785 (size before relaxing)
+ .debug_str     0x000000000000340c      0x198 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(os_systick.o)
+                                        0x507 (size before relaxing)
+ .debug_str     0x00000000000035a4      0x1e5 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_timer.o)
+                                       0x1316 (size before relaxing)
+ .debug_str     0x0000000000003789      0x343 platform/libplatform_ns.a(system_nrf9160.o)
+                                        0x519 (size before relaxing)
+
+.debug_frame    0x0000000000000000     0x1520
+ .debug_frame   0x0000000000000000       0x58 app/CMakeFiles/tfm_ns.dir/main_ns.o
+ .debug_frame   0x0000000000000058       0x60 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/ns_interface/ns_client_ext/tz_shim_layer.o
+ .debug_frame   0x00000000000000b8       0x30 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Config/RTX_Config.o
+ .debug_frame   0x00000000000000e8       0x20 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+ .debug_frame   0x0000000000000108      0x1c4 app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o
+ .debug_frame   0x00000000000002cc       0x40 platform/libplatform_ns.a(dummy_uart_stdout.o)
+ .debug_frame   0x000000000000030c       0x48 app/libtfm_api_ns.a(tfm_ns_interface.o)
+ .debug_frame   0x0000000000000354       0xd0 ns_log/libtfm_ns_log.a(tfm_log_raw.o)
+ .debug_frame   0x0000000000000424       0x84 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_system.o)
+ .debug_frame   0x00000000000004a8      0x204 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+ .debug_frame   0x00000000000006ac      0x21c C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+ .debug_frame   0x00000000000008c8       0xa4 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_memory.o)
+ .debug_frame   0x000000000000096c      0x134 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mutex.o)
+ .debug_frame   0x0000000000000aa0      0x54c C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .debug_frame   0x0000000000000fec      0x234 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .debug_frame   0x0000000000001220       0xb0 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(os_systick.o)
+ .debug_frame   0x00000000000012d0      0x164 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_timer.o)
+ .debug_frame   0x0000000000001434       0x50 platform/libplatform_ns.a(system_nrf9160.o)
+ .debug_frame   0x0000000000001484       0x28 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-exit.o)
+ .debug_frame   0x00000000000014ac       0x2c c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-init.o)
+ .debug_frame   0x00000000000014d8       0x28 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x0000000000001500       0x20 c:/ncs/toolchains/v2.0.0/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/10.3.0/../../../../arm-zephyr-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-memset.o)
+
+.debug_loc      0x0000000000000000     0xe686
+ .debug_loc     0x0000000000000000       0x25 app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/ns_interface/ns_client_ext/tz_shim_layer.o
+ .debug_loc     0x0000000000000025       0x3f app/CMakeFiles/tfm_ns.dir/C_/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Config/RTX_Config.o
+ .debug_loc     0x0000000000000064      0x5ae app/CMakeFiles/tfm_ns.dir/os_wrapper_cmsis_rtos_v2.o
+ .debug_loc     0x0000000000000612       0x25 platform/libplatform_ns.a(dummy_uart_stdout.o)
+ .debug_loc     0x0000000000000637      0x13d app/libtfm_api_ns.a(tfm_ns_interface.o)
+ .debug_loc     0x0000000000000774      0x4bf ns_log/libtfm_ns_log.a(tfm_log_raw.o)
+ .debug_loc     0x0000000000000c33      0x2cd C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_system.o)
+ .debug_loc     0x0000000000000f00     0x2a23 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_msgqueue.o)
+ .debug_loc     0x0000000000003923     0x2201 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mempool.o)
+ .debug_loc     0x0000000000005b24      0x842 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_memory.o)
+ .debug_loc     0x0000000000006366      0xbc3 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_mutex.o)
+ .debug_loc     0x0000000000006f29     0x585e C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_thread.o)
+ .debug_loc     0x000000000000c787      0xe75 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_kernel.o)
+ .debug_loc     0x000000000000d5fc       0xd6 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(os_systick.o)
+ .debug_loc     0x000000000000d6d2      0xf53 C:/ncs/v2.0.0/modules/tee/tf-m/tf-m-tests/CMSIS/RTOS2/RTX/Library/GCC/libRTX_V8MMN.a(rtx_timer.o)
+ .debug_loc     0x000000000000e625       0x61 platform/libplatform_ns.a(system_nrf9160.o)

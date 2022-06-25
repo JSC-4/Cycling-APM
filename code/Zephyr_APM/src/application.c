@@ -14,6 +14,8 @@
 #include <math.h>
 
 #include "application.h"
+#include "particulate_matter.h"
+#include "sht40.h"
 #include "temperature.h"
 #include "connection.h"
 
@@ -35,16 +37,20 @@ static cJSON *create_timestamped_data_message_object(const char *const appid)
 	cJSON *msg_obj = NULL;
 	int64_t timestamp;
 
-	if (date_time_now(&timestamp)) {
+	if (date_time_now(&timestamp))
+	{
 		LOG_ERR("Failed to create timestamp for data message "
-			"with appid %s", log_strdup(appid));
+				"with appid %s",
+				log_strdup(appid));
 		return NULL;
 	}
 
 	msg_obj = cJSON_CreateObject();
-	if (msg_obj == NULL) {
+	if (msg_obj == NULL)
+	{
 		LOG_ERR("Failed to create container object for timestamped data message "
-			"with appid %s", log_strdup(appid));
+				"with appid %s",
+				log_strdup(appid));
 		return NULL;
 	}
 
@@ -53,13 +59,15 @@ static cJSON *create_timestamped_data_message_object(const char *const appid)
 	 * https://github.com/nRFCloud/application-protocols
 	 */
 
-	if ((cJSON_AddStringToObject(msg_obj, NRF_CLOUD_JSON_APPID_KEY, appid)  == NULL) ||
-	    (cJSON_AddStringToObject(msg_obj, NRF_CLOUD_JSON_MSG_TYPE_KEY,
-					      NRF_CLOUD_JSON_MSG_TYPE_VAL_DATA) == NULL) ||
-	    (cJSON_AddNumberToObject(msg_obj, NRF_CLOUD_MSG_TIMESTAMP_KEY,
-					      (double)timestamp)		== NULL)) {
+	if ((cJSON_AddStringToObject(msg_obj, NRF_CLOUD_JSON_APPID_KEY, appid) == NULL) ||
+		(cJSON_AddStringToObject(msg_obj, NRF_CLOUD_JSON_MSG_TYPE_KEY,
+								 NRF_CLOUD_JSON_MSG_TYPE_VAL_DATA) == NULL) ||
+		(cJSON_AddNumberToObject(msg_obj, NRF_CLOUD_MSG_TIMESTAMP_KEY,
+								 (double)timestamp) == NULL))
+	{
 		LOG_ERR("Failed to populate timestamped data message object "
-			"with appid %s", log_strdup(appid));
+				"with appid %s",
+				log_strdup(appid));
 		cJSON_Delete(msg_obj);
 		return NULL;
 	}
@@ -81,16 +89,18 @@ static int send_sensor_sample(const char *const sensor, double value)
 	/* Create a timestamped message container object for the sensor sample. */
 	cJSON *msg_obj = create_timestamped_data_message_object(sensor);
 
-	if (msg_obj == NULL) {
+	if (msg_obj == NULL)
+	{
 		ret = -EINVAL;
 		goto cleanup;
 	}
 
 	/* Populate the container object with the sensor value. */
-	if (cJSON_AddNumberToObject(msg_obj, NRF_CLOUD_JSON_DATA_KEY, value) == NULL) {
+	if (cJSON_AddNumberToObject(msg_obj, NRF_CLOUD_JSON_DATA_KEY, value) == NULL)
+	{
 		ret = -ENOMEM;
 		LOG_ERR("Failed to append value to %s sample container object ",
-			log_strdup(sensor));
+				log_strdup(sensor));
 		goto cleanup;
 	}
 
@@ -98,7 +108,8 @@ static int send_sensor_sample(const char *const sensor, double value)
 	ret = send_device_message_cJSON(msg_obj);
 
 cleanup:
-	if (msg_obj) {
+	if (msg_obj)
+	{
 		cJSON_Delete(msg_obj);
 	}
 	return ret;
@@ -117,13 +128,15 @@ static int send_gnss_nmea(const char *const nmea)
 	/* Create a timestamped message container object for the GNSS NMEA data. */
 	cJSON *msg_obj = create_timestamped_data_message_object(NRF_CLOUD_JSON_APPID_VAL_GPS);
 
-	if (!msg_obj) {
+	if (!msg_obj)
+	{
 		ret = -EINVAL;
 		goto cleanup;
 	}
 
 	/* Populate the container object with the NMEA data. */
-	if (cJSON_AddStringToObject(msg_obj, NRF_CLOUD_JSON_DATA_KEY, nmea) == NULL) {
+	if (cJSON_AddStringToObject(msg_obj, NRF_CLOUD_JSON_DATA_KEY, nmea) == NULL)
+	{
 		ret = -ENOMEM;
 		LOG_ERR("Failed to append NMEA data to GNSS message object");
 		goto cleanup;
@@ -133,12 +146,12 @@ static int send_gnss_nmea(const char *const nmea)
 	ret = send_device_message_cJSON(msg_obj);
 
 cleanup:
-	if (msg_obj) {
+	if (msg_obj)
+	{
 		cJSON_Delete(msg_obj);
 	}
 	return ret;
 }
-
 
 /**
  * @brief Compute checksum for NMEA string.
@@ -151,7 +164,8 @@ static uint8_t nmea_checksum(const char *const datastring)
 	uint8_t checksum = 0;
 	int len = strlen(datastring);
 
-	for (int i = 0; i < len; i++) {
+	for (int i = 0; i < len; i++)
+	{
 		checksum ^= datastring[i];
 	}
 	return checksum;
@@ -172,14 +186,14 @@ static uint8_t nmea_checksum(const char *const datastring)
 static void on_location_update(const struct location_data location_data)
 {
 	LOG_INF("Location Updated: %.06f N %.06f W, accuracy: %.01f m, Method: %s",
-		location_data.latitude, location_data.longitude, location_data.accuracy,
-		location_data.method == LOCATION_METHOD_CELLULAR	? "Cellular" :
-		location_data.method == LOCATION_METHOD_GNSS		? "GNSS"     :
-		location_data.method == LOCATION_METHOD_WIFI		? "WIFI"     :
-									  "Invalid");
+			location_data.latitude, location_data.longitude, location_data.accuracy,
+			location_data.method == LOCATION_METHOD_CELLULAR ? "Cellular" : location_data.method == LOCATION_METHOD_GNSS ? "GNSS"
+																		: location_data.method == LOCATION_METHOD_WIFI	 ? "WIFI"
+																														 : "Invalid");
 
 	/* If the position update was derived using GNSS, send it onward to nRF Cloud. */
-	if (location_data.method == LOCATION_METHOD_GNSS) {
+	if (location_data.method == LOCATION_METHOD_GNSS)
+	{
 		LOG_INF("GNSS Position Update! Sending to nRF Cloud...");
 
 		/* Synthesize an NMEA message from the provided lat/long/timestamp.
@@ -196,13 +210,13 @@ static void on_location_update(const struct location_data location_data)
 		 * but close enough that nRF Cloud can't tell the difference.
 		 */
 		snprintf(nmea_buf, sizeof(nmea_buf), "$GPGGA,,%02d%08.5f,%c,%02d%08.5f,%c,,,,,,,,,",
-			lat_deg, lat_min, location_data.latitude > 0 ? 'N':'S',
-			lon_deg, lon_min, location_data.longitude > 0 ? 'E':'W');
+				 lat_deg, lat_min, location_data.latitude > 0 ? 'N' : 'S',
+				 lon_deg, lon_min, location_data.longitude > 0 ? 'E' : 'W');
 
 		int payload_length = strlen(nmea_buf);
 
 		snprintf(nmea_buf + payload_length, sizeof(nmea_buf) - payload_length, "*%02X\n",
-			 nmea_checksum(nmea_buf + 1));
+				 nmea_checksum(nmea_buf + 1));
 		LOG_DBG("NMEA: %s", log_strdup(nmea_buf));
 
 		/* Send the NMEA string. */
@@ -216,20 +230,24 @@ void main_application(void)
 	 * This is needed both for location services and for sensor sample timestamping.
 	 */
 	LOG_INF("Waiting for modem to determine current date and time");
-	if (!await_date_time_known(K_SECONDS(CONFIG_DATE_TIME_ESTABLISHMENT_TIMEOUT_SECONDS))) {
+	if (!await_date_time_known(K_SECONDS(CONFIG_DATE_TIME_ESTABLISHMENT_TIMEOUT_SECONDS)))
+	{
 		LOG_WRN("Failed to determine valid date time. Proceeding anyways");
-	} else {
+	}
+	else
+	{
 		LOG_INF("Current date and time determined");
 	}
 
 	/* Begin tracking location at the configured interval. */
 	(void)start_location_tracking(on_location_update,
-					CONFIG_LOCATION_TRACKING_SAMPLE_INTERVAL_SECONDS);
+								  CONFIG_LOCATION_TRACKING_SAMPLE_INTERVAL_SECONDS);
 
 	int counter = 0;
 
 	/* Begin sampling sensors. */
-	while (true) {
+	while (true)
+	{
 		/* Start the sensor sample interval timer.
 		 * We use a timer here instead of merely sleeping the thread, because the
 		 * application thread can be preempted by other threads performing long tasks
@@ -237,18 +255,28 @@ void main_application(void)
 		 * delays when metering the sample send rate.
 		 */
 		k_timer_start(&sensor_sample_timer,
-			K_SECONDS(CONFIG_SENSOR_SAMPLE_INTERVAL_SECONDS), K_FOREVER);
+					  K_SECONDS(CONFIG_SENSOR_SAMPLE_INTERVAL_SECONDS), K_FOREVER);
 
-		if (IS_ENABLED(CONFIG_TEMP_TRACKING)) {
+		if (IS_ENABLED(CONFIG_TEMP_TRACKING))
+		{
 			double temp = -1;
 
-			if (get_temperature(&temp) == 0) {
+			if (get_temperature(&temp) == 0)
+			{
 				LOG_INF("Temperature is %d degrees C", (int)temp);
 				(void)send_sensor_sample(NRF_CLOUD_JSON_APPID_VAL_TEMP, temp);
 			}
 		}
 
-		if (IS_ENABLED(CONFIG_TEST_COUNTER)) {
+		pm_data data;
+
+		if (pm_read(&data) == 0)
+		{
+			(void)send_sensor_sample("pm2.5", data.particles_25um);
+		}
+
+		if (IS_ENABLED(CONFIG_TEST_COUNTER))
+		{
 			(void)send_sensor_sample("COUNT", counter++);
 		}
 
