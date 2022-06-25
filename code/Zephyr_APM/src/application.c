@@ -265,22 +265,24 @@ void main_application(void)
 		k_timer_start(&sensor_sample_timer,
 					  K_SECONDS(CONFIG_SENSOR_SAMPLE_INTERVAL_SECONDS), K_FOREVER);
 
-		if (IS_ENABLED(CONFIG_TEMP_TRACKING))
-		{
-			double temp = -1;
+		//if (IS_ENABLED(CONFIG_TEMP_TRACKING))
+		//{
+			sht40_data sht40_values;
 
-			if (get_temperature(&temp) == 0)
+			if (sht40_read(&sht40_values) == 0)
 			{
-				LOG_INF("Temperature is %d degrees C", (int)temp);
-				(void)send_sensor_sample(NRF_CLOUD_JSON_APPID_VAL_TEMP, temp);
+				LOG_INF("Temperature is %d degrees C", sht40_values.temperature);
+				(void)send_sensor_sample(NRF_CLOUD_JSON_APPID_VAL_TEMP, sht40_values.temperature);
+				(void)send_sensor_sample(NRF_CLOUD_JSON_APPID_VAL_HUMID, sht40_values.humidity);
+
 			}
-		}
+		//}
 
-		pm_data data;
+		pm_data pm_values;
 
-		if (pm_read(&data) == 0)
+		if (pm_read(&pm_values) == 0)
 		{
-			(void)send_sensor_sample("pm2.5", data.pm25_env);
+			(void)send_sensor_sample("pm2.5", pm_values.pm25_env);
 		}
 
 		if (IS_ENABLED(CONFIG_TEST_COUNTER))
