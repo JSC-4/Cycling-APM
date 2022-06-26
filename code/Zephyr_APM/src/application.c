@@ -276,12 +276,12 @@ void main_application(void)
 		// 	}
 		// }
 
-		// pm_data data;
+		pm_data data;
 
-		// if (pm_read(&data) == 0)
-		// {
-		// 	(void)send_sensor_sample("pm2.5", data.pm25_env);
-		// }
+		if (pm_read(&data) == 0)
+		{
+			(void)send_sensor_sample("pm2.5", data.pm25_env);
+		}
 
 		sht40_data sht40_values;
 
