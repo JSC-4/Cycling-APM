@@ -20,14 +20,15 @@ bool sht40_read(sht40_data *data)
     int ret;
     uint8_t sht40_buffer[6] = {0};
 	float t_ticks, rh_ticks = 0;
+    uint8_t test[1] = {0xFD};
 
     const struct device *dev_i2c_th = device_get_binding(I2C2);
 
-    ret = i2c_write(dev_i2c_th, SHT40_HP, 1, SHT40_ADDR);
+    ret = i2c_write(dev_i2c_th, test, 1, SHT40_ADDR);
     if (ret != 0)
     {
-    	// printf("Failed to write I2C device address (err %i)\n", ret);
-    	return;
+    	printf("Failed to write I2C device address (err %i)\n", ret);
+    	return true;
     }
 
     k_msleep(10);
@@ -35,8 +36,8 @@ bool sht40_read(sht40_data *data)
     ret = i2c_read(dev_i2c_th, sht40_buffer, 6, SHT40_ADDR);
     if (ret != 0)
     {
-    	// printf("Failed to read I2C device address (err %i)\n", ret);
-    	return;
+    	printf("Failed to read I2C device address (err %i)\n", ret);
+    	return true;
     }
 
     t_ticks = (uint16_t)sht40_buffer[0] * 256 + (uint16_t)sht40_buffer[1];
