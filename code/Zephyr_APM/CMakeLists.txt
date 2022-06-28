@@ -18,6 +18,8 @@ target_sources(app PRIVATE src/fota_support.c)
 target_sources(app PRIVATE src/location_tracking.c)
 target_sources(app PRIVATE src/particulate_matter.c)
 target_sources(app PRIVATE src/sht40.c)
+target_sources(app PRIVATE src/dfr_no2_co.c)
+
 
 # NORDIC SDK APP END
 
