@@ -12,22 +12,35 @@
 #include <date_time.h>
 #include <cJSON.h>
 #include <math.h>
+#include <zephyr.h>		/* Give access to k_msleep() */
+#include <device.h>		/* Gives access to device_get_bindings() */
+#include <devicetree.h> /* For DT macros */
+#include <drivers/i2c.h>
 
 #include "application.h"
-#include "particulate_matter.h"
-#include "sht40.h"
 #include "temperature.h"
 #include "connection.h"
-
 #include "location_tracking.h"
 
-// #define I2C2_NODE DT_NODELABEL(i2c2) /* I2C1_NODE = i2c1 defined in the .dts file */
-// #if DT_NODE_HAS_STATUS(I2C2_NODE, okay)
-// #define I2C2 DT_LABEL(I2C2_NODE)
-// /* A build error here means your board does not have I2C enabled. */
-// #else "i2c2 devicetree node is disabled"
-// #define I2C2 ""
-// #endif
+#include "particulate_matter.h"
+#include "sht40.h"
+#include "dfr_no2_co.h"
+
+#define I2C2_NODE DT_NODELABEL(i2c2) /* I2C1_NODE = i2c1 defined in the .dts file */
+#if DT_NODE_HAS_STATUS(I2C2_NODE, okay)
+#define I2C2 DT_LABEL(I2C2_NODE)
+/* A build error here means your board does not have I2C enabled. */
+#else "i2c2 devicetree node is disabled"
+#define I2C2 ""
+#endif
+
+#define I2C3_NODE DT_NODELABEL(i2c3) /* I2C1_NODE = i2c1 defined in the .dts file */
+#if DT_NODE_HAS_STATUS(I2C3_NODE, okay)
+#define I2C3 DT_LABEL(I2C3_NODE)
+/* A build error here means your board does not have I2C enabled. */
+#else "i2c3 devicetree node is disabled"
+#define I2C3 ""
+#endif
 
 LOG_MODULE_REGISTER(application, CONFIG_MQTT_MULTI_SERVICE_LOG_LEVEL);
 
@@ -234,6 +247,42 @@ static void on_location_update(const struct location_data location_data)
 
 void main_application(void)
 {
+	int ret = 0;
+	static int init = 0;
+
+	const struct device *dev_i2c3 = device_get_binding(I2C3);
+	const struct device *dev_i2c2 = device_get_binding(I2C2);
+
+	dfr_data sensorReading;
+	pm_data pmReading;
+	sht40_data sht40Reading;
+
+	if (init == 0)
+	{
+
+		ret = dfrWakeUp(dev_i2c2);
+		if (ret != 0)
+		{
+			printf("Device could not be woken up\n");
+		}
+
+		printf("Warming up sensor for 3 minutes...\n");
+
+		/* 2. Warm-up time */
+		for (int i = 0; i < 3; i++)
+		{
+			while (!dfrWarmUpTime(dev_i2c2, &sensorReading))
+			{
+			}
+			// flag = 0;
+			printf("%d minute(s) has passed...\n", i + 1);
+		}
+
+		printf("Warm-up time is over!\n");
+	}
+
+	init = 1;
+
 	/* Wait for the date and time to become known.
 	 * This is needed both for location services and for sensor sample timestamping.
 	 */
@@ -276,23 +325,28 @@ void main_application(void)
 		// 	}
 		// }
 
-		pm_data data;
-
-		if (pm_read(&data) == 0)
+		if (pm_read(dev_i2c3, &pmReading) == 0)
 		{
-			(void)send_sensor_sample("pm2.5", data.pm25_env);
+			printf("PM 2.5: %d\n", pmReading.pm25_env);
+			(void)send_sensor_sample("pm2.5", pmReading.pm25_env);
 		}
 
-		sht40_data sht40_values;
-
-		if (sht40_read(&sht40_values) == 0)
+		if (sht40_read(dev_i2c3, &sht40Reading) == 0)
 		{
-			LOG_INF("Temperature is %d degrees C", sht40_values.temperature);
-			(void)send_sensor_sample("Temp", sht40_values.temperature);
-			(void)send_sensor_sample("Humidity", sht40_values.humidity);
+			printf("T: %lf, H: %lf\n", sht40Reading.temperature, sht40Reading.humidity);
+			(void)send_sensor_sample("Temp", sht40Reading.temperature);
+			(void)send_sensor_sample("Humidity", sht40Reading.humidity);
 		}
 
-
+		if (getGasData(dev_i2c2, &sensorReading) == 0)
+		{
+			printf("__r0_ox = %d, __r0_red = %d, powerData = %d, oxData = %d, redData = %d\n",
+				   sensorReading.r0_ox, sensorReading.r0_red, sensorReading.powerData, sensorReading.oxData, sensorReading.redData);
+			printf("NO2: %f", sensorReading.no2);
+			printf("\tCO: %f\n", sensorReading.co);
+			(void)send_sensor_sample("NO2", sensorReading.no2);
+			(void)send_sensor_sample("CO", sensorReading.co);
+		}
 
 		if (IS_ENABLED(CONFIG_TEST_COUNTER))
 		{

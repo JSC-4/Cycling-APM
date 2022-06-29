@@ -7,6 +7,8 @@
 #define DATA5_HIGH 0x0C
 #define DATA5_LOW 0x0D
 
+#include <device.h>		/* Gives access to device_get_bindings() */
+
 typedef struct pm_reading
 {
     uint16_t pm10_standard,  ///< Standard PM1.0
@@ -32,6 +34,6 @@ typedef struct pm_reading
  * @param[out] temp - Pointer to the double to be filled with the taken temperature sample.
  * @return int - 0 on success, otherwise, negative error code.
  */
-bool pm_read(pm_data *data);
+bool pm_read(const struct device *dev_i2c, pm_data *data);
 
 #endif /* _PARTICULATE_MATTER_H_ */

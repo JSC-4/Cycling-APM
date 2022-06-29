@@ -49,8 +49,8 @@ mcuboot_primary:
   address: 0x10000
   end_address: 0x78000
   orig_span: &id001
-  - tfm
   - app
+  - tfm
   - mcuboot_pad
   region: flash_primary
   sharers: 0x1

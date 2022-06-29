@@ -4,10 +4,12 @@
 #define SHT40_ADDR	0x44
 #define SHT40_HP	0xFD
 
+#include <device.h>		/* Gives access to device_get_bindings() */
+
 typedef struct sht40_reading
 {
-    uint16_t temperature;  ///< Temperature reading
-    uint16_t humidity;       ///< Humidity reading
+    double temperature;  ///< Temperature reading
+    double humidity;       ///< Humidity reading
 } sht40_data;
 
 /**
@@ -19,6 +21,6 @@ typedef struct sht40_reading
  * @param[out] temp - Pointer to the double to be filled with the taken temperature sample.
  * @return int - 0 on success, otherwise, negative error code.
  */
-bool sht40_read(sht40_data *data);
+bool sht40_read(const struct device *dev_i2c, sht40_data *data);
 
 #endif /* _SHT40_H_ */

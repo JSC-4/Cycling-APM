@@ -1,5 +1,9 @@
 {
     "nrf-connect.applications": [
         "${workspaceFolder}\\Zephyr_APM"
-    ]
+    ],
+    "files.associations": {
+        "device.h": "c",
+        "devicetree.h": "c"
+    }
 }

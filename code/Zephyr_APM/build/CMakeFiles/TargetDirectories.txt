@@ -167,6 +167,9 @@ C:/Users/jsc/Documents/Cycling_APM/code/Zephyr_APM/build/zephyr/subsys/tracing/C
 C:/Users/jsc/Documents/Cycling_APM/code/Zephyr_APM/build/zephyr/subsys/tracing/CMakeFiles/rebuild_cache.dir
 C:/Users/jsc/Documents/Cycling_APM/code/Zephyr_APM/build/zephyr/subsys/canbus/CMakeFiles/edit_cache.dir
 C:/Users/jsc/Documents/Cycling_APM/code/Zephyr_APM/build/zephyr/subsys/canbus/CMakeFiles/rebuild_cache.dir
+C:/Users/jsc/Documents/Cycling_APM/code/Zephyr_APM/build/zephyr/subsys/timing/CMakeFiles/subsys__timing.dir
+C:/Users/jsc/Documents/Cycling_APM/code/Zephyr_APM/build/zephyr/subsys/timing/CMakeFiles/edit_cache.dir
+C:/Users/jsc/Documents/Cycling_APM/code/Zephyr_APM/build/zephyr/subsys/timing/CMakeFiles/rebuild_cache.dir
 C:/Users/jsc/Documents/Cycling_APM/code/Zephyr_APM/build/zephyr/subsys/modbus/CMakeFiles/edit_cache.dir
 C:/Users/jsc/Documents/Cycling_APM/code/Zephyr_APM/build/zephyr/subsys/modbus/CMakeFiles/rebuild_cache.dir
 C:/Users/jsc/Documents/Cycling_APM/code/Zephyr_APM/build/zephyr/drivers/CMakeFiles/edit_cache.dir

@@ -10,10 +10,18 @@
 
 #include "dfr_no2_co.h"
 
-float getNitrogenDioxide(const struct device *dev_i2c, dfr_data *dfr_data)
+bool getGasData(const struct device *dev_i2c, dfr_data *dfr_data)
 {
     getSensorData(dev_i2c, dfr_data);
 
+    dfr_data->no2 = getNitrogenDioxide(dfr_data);
+    dfr_data->co = getCarbonMonoxide(dfr_data);
+
+    return false;
+}
+
+float getNitrogenDioxide(dfr_data *dfr_data)
+{
     if (dfr_data->RS_R0_OX_data < 1.1)
         return 0;
     float nitrogendioxide = (dfr_data->RS_R0_OX_data - 0.045) / 6.13;
@@ -24,10 +32,8 @@ float getNitrogenDioxide(const struct device *dev_i2c, dfr_data *dfr_data)
     return nitrogendioxide;
 }
 
-float getCarbonMonoxide(const struct device *dev_i2c, dfr_data *dfr_data)
+float getCarbonMonoxide(dfr_data *dfr_data)
 {
-    getSensorData(dev_i2c, dfr_data);
-
     if (dfr_data->RS_R0_RED_data > 0.425)
         return 0.0;
     float co = (0.425 - dfr_data->RS_R0_RED_data) / 0.000405;
@@ -98,7 +104,7 @@ int16_t getSensorData(const struct device *dev_i2c, dfr_data *dfr_data)
 
     dfr_data->r0_ox = dfr_data->powerData - dfr_data->oxData;
     dfr_data->r0_red = dfr_data->powerData - dfr_data->redData;
-    printf("__r0_ox = %d, __r0_red = %d, powerData = %d, oxData = %d, redData = %d\n", dfr_data->r0_ox, dfr_data->r0_red, dfr_data->powerData, dfr_data->oxData, dfr_data->redData);
+    // printf("__r0_ox = %d, __r0_red = %d, powerData = %d, oxData = %d, redData = %d\n", dfr_data->r0_ox, dfr_data->r0_red, dfr_data->powerData, dfr_data->oxData, dfr_data->redData);
 
     dfr_data->RS_R0_RED_data = (float)(dfr_data->powerData - dfr_data->redData) / (float)dfr_data->r0_red;
     dfr_data->RS_R0_OX_data = (float)(dfr_data->powerData - dfr_data->oxData) / (float)dfr_data->r0_ox;

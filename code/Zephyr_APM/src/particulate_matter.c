@@ -7,22 +7,13 @@
 
 #include "particulate_matter.h"
 
-#define I2C2_NODE DT_NODELABEL(i2c2) /* I2C1_NODE = i2c1 defined in the .dts file */
-#if DT_NODE_HAS_STATUS(I2C2_NODE, okay)
-#define I2C2 DT_LABEL(I2C2_NODE)
-/* A build error here means your board does not have I2C enabled. */
-#else "i2c2 devicetree node is disabled"
-#define I2C2 ""
-#endif
-
-bool pm_read(pm_data *data)
+bool pm_read(const struct device *dev_i2c, pm_data *data)
 {
     int ret;
     uint8_t pm_buffer[32] = {0};
 
-    const struct device *dev_i2c_pm = device_get_binding(I2C2);
 
-    ret = i2c_write_read(dev_i2c_pm, PM_ADDR, PM_SC1, 0, &pm_buffer, 32);
+    ret = i2c_write_read(dev_i2c, PM_ADDR, PM_SC1, 0, &pm_buffer, 32);
     if (ret != 0)
     {
         // printf("Failed to write/read I2C device address (err %i)\n", ret);

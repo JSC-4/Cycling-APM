@@ -31,6 +31,7 @@ typedef struct dfr_reading
 bool dfrWakeUp(const struct device *dev_i2c);
 bool dfrWarmUpTime(const struct device *dev_i2c, dfr_data *dfr_data);
 int16_t getSensorData(const struct device *dev_i2c, dfr_data *dfr_data);
-float getNitrogenDioxide(const struct device *dev_i2c, dfr_data *dfr_data);
-float getCarbonMonoxide(const struct device *dev_i2c, dfr_data *dfr_data);
+bool getGasData(const struct device *dev_i2c, dfr_data *dfr_data);
+float getNitrogenDioxide(dfr_data *dfr_data);
+float getCarbonMonoxide(dfr_data *dfr_data);
 #endif /* _DFR_NO2_CO_H_ */
