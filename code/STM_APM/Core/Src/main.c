@@ -21,7 +21,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "string.h"
+#include "stdio.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -56,6 +57,12 @@ static void MX_USART2_UART_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
+void send_uart(char *string){
+	uint8_t len = strlen(string);
+
+	HAL_UART_Transmit(&huart2, (uint8_t *)string, len, 2000); // Transmit in blocking mode
+}
+
 /* USER CODE END 0 */
 
 /**
@@ -89,6 +96,7 @@ int main(void)
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
 
+  send_uart("Testing UART in blocking mode\n\r");
   /* USER CODE END 2 */
 
   /* Infinite loop */
