@@ -1,6 +1,6 @@
 {
     "format-version": 0,
-    "time": 1656484647,
+    "time": 1656498241,
     "files": [
         {
             "load_address": 115200,
@@ -8,9 +8,9 @@
             "type": "application",
             "board": "nrf9160dk_nrf9160",
             "soc": "nRF9160_SICA",
-            "size": 251474,
+            "size": 249647,
             "file": "app_update.bin",
-            "modtime": 1656484646
+            "modtime": 1656498240
         }
     ],
     "name": "Zephyr_APM",

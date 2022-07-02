@@ -24,15 +24,6 @@
 
 #include "particulate_matter.h"
 #include "sht40.h"
-#include "dfr_no2_co.h"
-
-#define I2C2_NODE DT_NODELABEL(i2c2) /* I2C1_NODE = i2c1 defined in the .dts file */
-#if DT_NODE_HAS_STATUS(I2C2_NODE, okay)
-#define I2C2 DT_LABEL(I2C2_NODE)
-/* A build error here means your board does not have I2C enabled. */
-#else "i2c2 devicetree node is disabled"
-#define I2C2 ""
-#endif
 
 #define I2C3_NODE DT_NODELABEL(i2c3) /* I2C1_NODE = i2c1 defined in the .dts file */
 #if DT_NODE_HAS_STATUS(I2C3_NODE, okay)
@@ -251,37 +242,9 @@ void main_application(void)
 	static int init = 0;
 
 	const struct device *dev_i2c3 = device_get_binding(I2C3);
-	const struct device *dev_i2c2 = device_get_binding(I2C2);
 
-	dfr_data sensorReading;
 	pm_data pmReading;
 	sht40_data sht40Reading;
-
-	if (init == 0)
-	{
-
-		ret = dfrWakeUp(dev_i2c2);
-		if (ret != 0)
-		{
-			printf("Device could not be woken up\n");
-		}
-
-		printf("Warming up sensor for 3 minutes...\n");
-
-		/* 2. Warm-up time */
-		for (int i = 0; i < 3; i++)
-		{
-			while (!dfrWarmUpTime(dev_i2c2, &sensorReading))
-			{
-			}
-			// flag = 0;
-			printf("%d minute(s) has passed...\n", i + 1);
-		}
-
-		printf("Warm-up time is over!\n");
-	}
-
-	init = 1;
 
 	/* Wait for the date and time to become known.
 	 * This is needed both for location services and for sensor sample timestamping.
@@ -336,16 +299,6 @@ void main_application(void)
 			printf("T: %lf, H: %lf\n", sht40Reading.temperature, sht40Reading.humidity);
 			(void)send_sensor_sample("Temp", sht40Reading.temperature);
 			(void)send_sensor_sample("Humidity", sht40Reading.humidity);
-		}
-
-		if (getGasData(dev_i2c2, &sensorReading) == 0)
-		{
-			printf("__r0_ox = %d, __r0_red = %d, powerData = %d, oxData = %d, redData = %d\n",
-				   sensorReading.r0_ox, sensorReading.r0_red, sensorReading.powerData, sensorReading.oxData, sensorReading.redData);
-			printf("NO2: %f", sensorReading.no2);
-			printf("\tCO: %f\n", sensorReading.co);
-			(void)send_sensor_sample("NO2", sensorReading.no2);
-			(void)send_sensor_sample("CO", sensorReading.co);
 		}
 
 		if (IS_ENABLED(CONFIG_TEST_COUNTER))
