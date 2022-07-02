@@ -25,6 +25,7 @@
 #include "string.h"
 #include "stdio.h"
 
+#include "fatfs_sd.h"
 #include "particulate_matter.h"
 /* USER CODE END Includes */
 
@@ -45,6 +46,8 @@
 /* Private variables ---------------------------------------------------------*/
 I2C_HandleTypeDef hi2c1;
 
+SPI_HandleTypeDef hspi1;
+
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
@@ -56,19 +59,47 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_I2C1_Init(void);
+static void MX_SPI1_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+FATFS fs;	// File system
+FIL fil;	// File
+FRESULT fresult; // To store results
+char buffer[1024]; // To store data
+
+UINT br, bw; // File read/write count
+
+/* Capacity related variables */
+FATFS *pfs;
+DWORD fre_clust;
+uint32_t total, free_space;
 
 /* Registers for interfacing with the sensor */
 
-void send_uart(char *string){
+void send_uart(char *string) {
 	uint8_t len = strlen(string);
 
-	HAL_UART_Transmit(&huart2, (uint8_t *)string, len, 2000); // Transmit in blocking mode
+	HAL_UART_Transmit(&huart2, (uint8_t*) string, len, 2000); // Transmit in blocking mode
+}
+
+/* To find the size of the data in the buffer */
+int bufSize(char *buf) {
+	int i = 0;
+	while (*buf++ != '\0')
+		i++;
+	return i;
+}
+
+/* To clear the buffer */
+void bufClear(void) {
+
+	for (int i = 0; i < 1024; i++) {
+		buffer[i] = 0;
+	}
 }
 
 /* USER CODE END 0 */
@@ -105,28 +136,68 @@ int main(void)
   MX_USART2_UART_Init();
   MX_I2C1_Init();
   MX_FATFS_Init();
+  MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
 	pm_initialise(&data, &hi2c1);
-    char str[80];
+	char str[80];
 
-	send_uart("Testing UART in blocking mode\n\r");
+	/* Mount SD Card */
 
+	fresult = f_mount(&fs, "/", 1);
+	if (fresult == FR_OK) {
+		send_uart("SD card mounted successfully ...\n\r");
+	} else {
+		send_uart("error in mounting sd card ... \n\r");
+	}
 
+	  /***** Card Capacity Details ********/
+
+	  /* Check free space */
+	  f_getfree("", &free_space, &pfs);
+
+	  total = (uint32_t)((pfs->n_fatent - 2) * pfs->csize * 0.5);
+	  sprintf(buffer, "SD Card Total Size: \t%lu\n\r", total);
+	  send_uart(buffer);
+	  bufClear();
+	  free_space = (uint32_t)(fre_clust * pfs->csize * 0.5);
+	  send_uart(buffer);
+
+	  /* Open a file to write / create a file if it doesn't exist */
+	  fresult = f_open(&fil, "Sensor.txt", FA_OPEN_ALWAYS | FA_READ | FA_WRITE);
+
+	  /* Writing text */
+	  fresult = f_puts("This data is from the First FILE\n\r", &fil);
+
+	  /* Close file */
+	  f_close(&fil);
+
+	  send_uart("File.txt created and the data is written \n\r");
+
+	  /* Open file to read */
+	  fresult = f_open(&fil, "file1.txt", FA_READ);
+
+	  /* Read string from the file */
+	  f_gets(buffer, f_size(&fil), &fil);
+
+	  send_uart(buffer);
+
+	  /* Close file */
+	  f_close(&fil);
+
+	  bufClear();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-	while (1)
-	{
-		pm_read(&data);
-	   sprintf(str, "Value of PM2.5 = %d\r\n", data.pm25_env);
-	   send_uart(str);
-
+	while (1) {
+//		pm_read(&data);
+//		sprintf(str, "Value of PM2.5 = %d\r\n", data.pm25_env);
+//		send_uart(str);
 
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-		}
+	}
   /* USER CODE END 3 */
 }
 
@@ -228,6 +299,46 @@ static void MX_I2C1_Init(void)
 }
 
 /**
+  * @brief SPI1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_SPI1_Init(void)
+{
+
+  /* USER CODE BEGIN SPI1_Init 0 */
+
+  /* USER CODE END SPI1_Init 0 */
+
+  /* USER CODE BEGIN SPI1_Init 1 */
+
+  /* USER CODE END SPI1_Init 1 */
+  /* SPI1 parameter configuration*/
+  hspi1.Instance = SPI1;
+  hspi1.Init.Mode = SPI_MODE_MASTER;
+  hspi1.Init.Direction = SPI_DIRECTION_2LINES;
+  hspi1.Init.DataSize = SPI_DATASIZE_8BIT;
+  hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
+  hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
+  hspi1.Init.NSS = SPI_NSS_SOFT;
+  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_8;
+  hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
+  hspi1.Init.TIMode = SPI_TIMODE_DISABLE;
+  hspi1.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
+  hspi1.Init.CRCPolynomial = 7;
+  hspi1.Init.CRCLength = SPI_CRC_LENGTH_DATASIZE;
+  hspi1.Init.NSSPMode = SPI_NSS_PULSE_ENABLE;
+  if (HAL_SPI_Init(&hspi1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN SPI1_Init 2 */
+
+  /* USER CODE END SPI1_Init 2 */
+
+}
+
+/**
   * @brief USART2 Initialization Function
   * @param None
   * @retval None
@@ -277,7 +388,17 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(SD_CS_GPIO_Port, SD_CS_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin : SD_CS_Pin */
+  GPIO_InitStruct.Pin = SD_CS_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(SD_CS_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : LD3_Pin */
   GPIO_InitStruct.Pin = LD3_Pin;
@@ -299,11 +420,10 @@ static void MX_GPIO_Init(void)
 void Error_Handler(void)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
-		/* User can add his own implementation to report the HAL error return state */
-		__disable_irq();
-		while (1)
-		{
-		}
+	/* User can add his own implementation to report the HAL error return state */
+	__disable_irq();
+	while (1) {
+	}
   /* USER CODE END Error_Handler_Debug */
 }
 
