@@ -77,7 +77,7 @@
 					</folderInfo>
 					<fileInfo id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.528386141.1071280752" name="fatfs_sd.h" rcbsApplicability="disable" resourcePath="Core/Inc/fatfs_sd.h" toolsToInvoke=""/>
 					<sourceEntries>
-						<entry excluding="Src/fatfs_sd.c|Inc/fatfs_sd.h" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Core"/>
+						<entry excluding="Src/dfr_no2_co.c|Src/fatfs_sd.c|Inc/fatfs_sd.h" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Core"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers"/>
 					</sourceEntries>
 				</configuration>

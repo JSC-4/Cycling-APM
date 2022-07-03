@@ -46,6 +46,8 @@
 /* Private variables ---------------------------------------------------------*/
 I2C_HandleTypeDef hi2c1;
 
+TIM_HandleTypeDef htim16;
+
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
@@ -57,12 +59,17 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_I2C1_Init(void);
+static void MX_TIM16_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+
+uint8_t warmUpTimer;
+char str1[80];
+
 //FATFS fs;	// File system
 //FIL fil;	// File
 //FRESULT fresult; // To store results
@@ -132,6 +139,7 @@ int main(void)
   MX_GPIO_Init();
   MX_USART2_UART_Init();
   MX_I2C1_Init();
+  MX_TIM16_Init();
   /* USER CODE BEGIN 2 */
 	pm_initialise(&data, &hi2c1);
 	sht40_initialise(&sht40_s, &hi2c1);
@@ -139,6 +147,11 @@ int main(void)
 	HAL_StatusTypeDef status;
 	char str[80];
 
+
+	// Start Timer
+	HAL_TIM_Base_Start_IT(&htim16);
+	while (warmUpTimer <= 10);
+	HAL_TIM_Base_Stop_IT(&htim16);
 	/* Mount SD Card */
 
 //	fresult = f_mount(&fs, "/", 1);
@@ -196,23 +209,21 @@ int main(void)
 		} else if (status == HAL_ERROR){
 			send_uart("Error\n\r");
 		} else if (status == HAL_OK){
-//		sprintf(str, "Value of PM2.5 = %d\r\n", data.pm25_env);
 		sprintf(str, "PM2.5: %d\t T: %lf\t H: %lf\r\n", data.pm25_env, sht40_s.temperature, sht40_s.humidity);
-
 		send_uart(str);
 		}
 		HAL_GPIO_TogglePin(GPIOB, LD3_Pin);
-//		  /* Open a file to write */
-//		  fresult = f_open(&fil, "sensor.txt", FA_OPEN_ALWAYS | FA_WRITE);
-//
-//		  fresult = f_lseek(&fil, f_size(&fil));
-//
-//		  /* Writing text */
-//		  fresult = f_puts(str, &fil);
-//
-//		  /* Close file */
-//		  f_close(&fil);
-//
+////		  /* Open a file to write */
+////		  fresult = f_open(&fil, "sensor.txt", FA_OPEN_ALWAYS | FA_WRITE);
+////
+////		  fresult = f_lseek(&fil, f_size(&fil));
+////
+////		  /* Writing text */
+////		  fresult = f_puts(str, &fil);
+////
+////		  /* Close file */
+////		  f_close(&fil);
+////
 		 HAL_Delay(500);
 
 
@@ -321,6 +332,38 @@ static void MX_I2C1_Init(void)
 }
 
 /**
+  * @brief TIM16 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM16_Init(void)
+{
+
+  /* USER CODE BEGIN TIM16_Init 0 */
+
+  /* USER CODE END TIM16_Init 0 */
+
+  /* USER CODE BEGIN TIM16_Init 1 */
+
+  /* USER CODE END TIM16_Init 1 */
+  htim16.Instance = TIM16;
+  htim16.Init.Prescaler = 8000 - 1;
+  htim16.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim16.Init.Period = 10000 - 1;
+  htim16.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim16.Init.RepetitionCounter = 0;
+  htim16.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_Base_Init(&htim16) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM16_Init 2 */
+
+  /* USER CODE END TIM16_Init 2 */
+
+}
+
+/**
   * @brief USART2 Initialization Function
   * @param None
   * @retval None
@@ -382,7 +425,13 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
+	if (htim == &htim16){
+		sprintf(str1, "Seconds passed: %d\r\n", warmUpTimer++);
+		send_uart(str1);
 
+	}
+}
 /* USER CODE END 4 */
 
 /**
