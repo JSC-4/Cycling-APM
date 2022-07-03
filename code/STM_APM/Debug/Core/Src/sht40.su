@@ -1,0 +1,2 @@
+../Core/Src/sht40.c:3:19:sht40_initialise	16	static
+../Core/Src/sht40.c:16:19:sht40_read	48	static

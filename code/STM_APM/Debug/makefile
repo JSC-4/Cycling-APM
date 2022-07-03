@@ -9,10 +9,6 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
--include Middlewares/Third_Party/FatFs/src/option/subdir.mk
--include Middlewares/Third_Party/FatFs/src/subdir.mk
--include FATFS/Target/subdir.mk
--include FATFS/App/subdir.mk
 -include Drivers/STM32L4xx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
@@ -65,7 +61,7 @@ main-build: Cycling_APM.elf secondary-outputs
 
 # Tool invocations
 Cycling_APM.elf Cycling_APM.map: $(OBJS) $(USER_OBJS) C:\Users\jsc\Documents\Cycling_APM\code\STM_APM\STM32L432KCUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Cycling_APM.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\jsc\Documents\Cycling_APM\code\STM_APM\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Cycling_APM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+	arm-none-eabi-gcc -o "Cycling_APM.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\jsc\Documents\Cycling_APM\code\STM_APM\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Cycling_APM.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
