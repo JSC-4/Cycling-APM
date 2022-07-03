@@ -48,7 +48,7 @@ typedef struct dfr_reading
  *
  * @return HAL_StatusTypeDef - HAL_OK on success, otherwise HAL_ERROR.
  */
-HAL_StatusTypeDef drf_initialise(dfr_data *dev, I2C_HandleTypeDef *i2cHandle);
+HAL_StatusTypeDef dfr_initialise(dfr_data *dev, I2C_HandleTypeDef *i2cHandle);
 
 /**
  * @brief Initially the device is in sleep mode, this function will wake the device.
@@ -67,7 +67,7 @@ HAL_StatusTypeDef dfrWakeUp(dfr_data *dev);
  *
  * @return bool - 1 on success, otherwise zero if an error.
  */
-HAL_StatusTypeDef dfrWarmUpTime(dfr_data *dev);
+//HAL_StatusTypeDef dfrWarmUpTime(dfr_data *dev);
 
 
 /**

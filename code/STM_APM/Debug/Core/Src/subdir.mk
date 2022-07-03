@@ -5,6 +5,7 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../Core/Src/dfr_no2_co.c \
 ../Core/Src/main.c \
 ../Core/Src/particulate_matter.c \
 ../Core/Src/sht40.c \
@@ -15,6 +16,7 @@ C_SRCS += \
 ../Core/Src/system_stm32l4xx.c 
 
 OBJS += \
+./Core/Src/dfr_no2_co.o \
 ./Core/Src/main.o \
 ./Core/Src/particulate_matter.o \
 ./Core/Src/sht40.o \
@@ -25,6 +27,7 @@ OBJS += \
 ./Core/Src/system_stm32l4xx.o 
 
 C_DEPS += \
+./Core/Src/dfr_no2_co.d \
 ./Core/Src/main.d \
 ./Core/Src/particulate_matter.d \
 ./Core/Src/sht40.d \
@@ -42,7 +45,7 @@ Core/Src/%.o Core/Src/%.su: ../Core/Src/%.c Core/Src/subdir.mk
 clean: clean-Core-2f-Src
 
 clean-Core-2f-Src:
-	-$(RM) ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/particulate_matter.d ./Core/Src/particulate_matter.o ./Core/Src/particulate_matter.su ./Core/Src/sht40.d ./Core/Src/sht40.o ./Core/Src/sht40.su ./Core/Src/stm32l4xx_hal_msp.d ./Core/Src/stm32l4xx_hal_msp.o ./Core/Src/stm32l4xx_hal_msp.su ./Core/Src/stm32l4xx_it.d ./Core/Src/stm32l4xx_it.o ./Core/Src/stm32l4xx_it.su ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32l4xx.d ./Core/Src/system_stm32l4xx.o ./Core/Src/system_stm32l4xx.su
+	-$(RM) ./Core/Src/dfr_no2_co.d ./Core/Src/dfr_no2_co.o ./Core/Src/dfr_no2_co.su ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/particulate_matter.d ./Core/Src/particulate_matter.o ./Core/Src/particulate_matter.su ./Core/Src/sht40.d ./Core/Src/sht40.o ./Core/Src/sht40.su ./Core/Src/stm32l4xx_hal_msp.d ./Core/Src/stm32l4xx_hal_msp.o ./Core/Src/stm32l4xx_hal_msp.su ./Core/Src/stm32l4xx_it.d ./Core/Src/stm32l4xx_it.o ./Core/Src/stm32l4xx_it.su ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32l4xx.d ./Core/Src/system_stm32l4xx.o ./Core/Src/system_stm32l4xx.su
 
 .PHONY: clean-Core-2f-Src
 

@@ -1,3 +1,4 @@
+"./Core/Src/dfr_no2_co.o"
 "./Core/Src/main.o"
 "./Core/Src/particulate_matter.o"
 "./Core/Src/sht40.o"

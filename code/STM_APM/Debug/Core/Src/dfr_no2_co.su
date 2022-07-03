@@ -1,0 +1,6 @@
+../Core/Src/dfr_no2_co.c:3:19:dfr_initialise	16	static
+../Core/Src/dfr_no2_co.c:23:19:getGasData	16	static
+../Core/Src/dfr_no2_co.c:34:7:getNitrogenDioxide	24	static
+../Core/Src/dfr_no2_co.c:47:7:getCarbonMonoxide	24	static
+../Core/Src/dfr_no2_co.c:60:19:dfrWakeUp	32	static
+../Core/Src/dfr_no2_co.c:104:9:getSensorData	48	static
