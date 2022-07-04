@@ -25,7 +25,7 @@
 #include "string.h"
 #include "stdio.h"
 
-//#include "fatfs_sd.h"
+#include "fatfs_sd.h"
 #include "dfr_no2_co.h"
 #include "particulate_matter.h"
 #include "sht40.h"
@@ -75,17 +75,17 @@ static void MX_SPI1_Init(void);
 uint8_t warmUpTimer; //delete
 char str1[80];  // delete
 
-//FATFS fs;	// File system
-//FIL fil;	// File
-//FRESULT fresult; // To store results
-//char buffer[1024]; // To store data
-//
-//UINT br, bw; // File read/write count
-//
-///* Capacity related variables */
-//FATFS *pfs;
-//DWORD fre_clust;
-//uint32_t total, free_space;
+FATFS fs;	// File system
+FIL fil;	// File
+FRESULT fresult; // To store results
+char buffer[1024]; // To store data
+
+UINT br, bw; // File read/write count
+
+/* Capacity related variables */
+FATFS *pfs;
+DWORD fre_clust;
+uint32_t total, free_space;
 
 /* Registers for interfacing with the sensor */
 
@@ -95,21 +95,21 @@ void send_uart(char *string) {
 	HAL_UART_Transmit(&huart2, (uint8_t*) string, len, 2000); // Transmit in blocking mode
 }
 
-///* To find the size of the data in the buffer */
-//int bufSize(char *buf) {
-//	int i = 0;
-//	while (*buf++ != '\0')
-//		i++;
-//	return i;
-//}
-//
-///* To clear the buffer */
-//void bufClear(void) {
-//
-//	for (int i = 0; i < 1024; i++) {
-//		buffer[i] = 0;
-//	}
-//}
+/* To find the size of the data in the buffer */
+int bufSize(char *buf) {
+	int i = 0;
+	while (*buf++ != '\0')
+		i++;
+	return i;
+}
+
+/* To clear the buffer */
+void bufClear(void) {
+
+	for (int i = 0; i < 1024; i++) {
+		buffer[i] = 0;
+	}
+}
 
 /* USER CODE END 0 */
 
@@ -159,52 +159,54 @@ int main(void)
 	char str[80];
 
 	// Start Timer
-	HAL_TIM_Base_Start_IT(&htim16);
-	while (warmUpTimer <= 10)
-		;
-	HAL_TIM_Base_Stop_IT(&htim16);
+//	HAL_TIM_Base_Start_IT(&htim16);
+//	while (warmUpTimer <= 10)
+//		;
+//	HAL_TIM_Base_Stop_IT(&htim16);
 	/* Mount SD Card */
 
-//	fresult = f_mount(&fs, "/", 1);
-//	if (fresult == FR_OK) {
-//		send_uart("SD card mounted successfully ...\n\r");
-//	} else {
-//		send_uart("error in mounting sd card ... \n\r");
-//	}
+	fresult = f_mount(&fs, "/", 1);
+	if (fresult == FR_OK) {
+		send_uart("SD card mounted successfully ...\n\r");
+	} else {
+		send_uart("error in mounting sd card ... \n\r");
+	}
+
+	/***** Card Capacity Details ********/
+
+	/* Check free space */
+	f_getfree("", &free_space, &pfs);
+
+	total = (uint32_t) ((pfs->n_fatent - 2) * pfs->csize * 0.5);
+	sprintf(buffer, "SD Card Total Size: \t%lu\n\r", total);
+	send_uart(buffer);
+	bufClear();
+	free_space = (uint32_t) (fre_clust * pfs->csize * 0.5);
+	send_uart(buffer);
+
+//	/* Open a file to write / create a file if it doesn't exist */
+//	fresult = f_open(&fil, "Sensor.txt", FA_OPEN_ALWAYS | FA_READ | FA_WRITE);
 //
-//	  /***** Card Capacity Details ********/
+//	/* Writing text */
+//	fresult = f_puts("This data is from the First FILE\n\r", &fil);
 //
-//	  /* Check free space */
-//	  f_getfree("", &free_space, &pfs);
+//	/* Close file */
+//	f_close(&fil);
 //
-//	  total = (uint32_t)((pfs->n_fatent - 2) * pfs->csize * 0.5);
-//	  sprintf(buffer, "SD Card Total Size: \t%lu\n\r", total);
-//	  send_uart(buffer);
-//	  bufClear();
-//	  free_space = (uint32_t)(fre_clust * pfs->csize * 0.5);
-//	  send_uart(buffer);
-	/* Open a file to write / create a file if it doesn't exist */
-//	  fresult = f_open(&fil, "Sensor.txt", FA_OPEN_ALWAYS | FA_READ | FA_WRITE);
-//	  /* Writing text */
-//	  fresult = f_puts("This data is from the First FILE\n\r", &fil);
+//	send_uart("File.txt created and the data is written \n\r");
 //
-//	  /* Close file */
-//	  f_close(&fil);
+//	/* Open file to read */
+//	fresult = f_open(&fil, "file1.txt", FA_READ);
 //
-//	  send_uart("File.txt created and the data is written \n\r");
+//	/* Read string from the file */
+//	f_gets(buffer, f_size(&fil), &fil);
 //
-//	  /* Open file to read */
-//	  fresult = f_open(&fil, "file1.txt", FA_READ);
+//	send_uart(buffer);
 //
-//	  /* Read string from the file */
-//	  f_gets(buffer, f_size(&fil), &fil);
+//	/* Close file */
+//	f_close(&fil);
 //
-//	  send_uart(buffer);
-//
-//	  /* Close file */
-//	  f_close(&fil);
-//
-//	  bufClear();
+//	bufClear();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -219,22 +221,23 @@ int main(void)
 		} else if (status == HAL_ERROR) {
 			send_uart("Error\n\r");
 		} else if (status == HAL_OK) {
-			sprintf(str, "PM2.5: %d\t dfr: %d\t T: %lf\t H: %lf\r\n", pm_s.pm25_env, dfr_s.r0_ox,
-					sht40_s.temperature, sht40_s.humidity);
+			sprintf(str, "PM2.5: %d\t dfr: %d\t T: %lf\t H: %lf\r\n",
+					pm_s.pm25_env, dfr_s.r0_ox, sht40_s.temperature,
+					sht40_s.humidity);
 			send_uart(str);
 		}
 		HAL_GPIO_TogglePin(GPIOB, LD3_Pin);
-////		  /* Open a file to write */
-////		  fresult = f_open(&fil, "sensor.txt", FA_OPEN_ALWAYS | FA_WRITE);
-////
-////		  fresult = f_lseek(&fil, f_size(&fil));
-////
-////		  /* Writing text */
-////		  fresult = f_puts(str, &fil);
-////
-////		  /* Close file */
-////		  f_close(&fil);
-////
+		  /* Open a file to write */
+		  fresult = f_open(&fil, "sensor.txt", FA_OPEN_ALWAYS | FA_WRITE);
+
+		  fresult = f_lseek(&fil, f_size(&fil));
+
+		  /* Writing text */
+		  fresult = f_puts(str, &fil);
+
+		  /* Close file */
+		  f_close(&fil);
+
 		HAL_Delay(500);
 
     /* USER CODE END WHILE */
@@ -260,16 +263,23 @@ void SystemClock_Config(void)
     Error_Handler();
   }
 
+  /** Configure LSE Drive Capability
+  */
+  HAL_PWR_EnableBkUpAccess();
+  __HAL_RCC_LSEDRIVE_CONFIG(RCC_LSEDRIVE_LOW);
+
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
-  RCC_OscInitStruct.HSIState = RCC_HSI_ON;
-  RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_LSE|RCC_OSCILLATORTYPE_MSI;
+  RCC_OscInitStruct.LSEState = RCC_LSE_ON;
+  RCC_OscInitStruct.MSIState = RCC_MSI_ON;
+  RCC_OscInitStruct.MSICalibrationValue = 0;
+  RCC_OscInitStruct.MSIClockRange = RCC_MSIRANGE_6;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
-  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
+  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_MSI;
   RCC_OscInitStruct.PLL.PLLM = 1;
-  RCC_OscInitStruct.PLL.PLLN = 10;
+  RCC_OscInitStruct.PLL.PLLN = 40;
   RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV7;
   RCC_OscInitStruct.PLL.PLLQ = RCC_PLLQ_DIV2;
   RCC_OscInitStruct.PLL.PLLR = RCC_PLLR_DIV2;
@@ -291,6 +301,10 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
+
+  /** Enable MSI Auto calibration
+  */
+  HAL_RCCEx_EnableMSIPLLMode();
 }
 
 /**
