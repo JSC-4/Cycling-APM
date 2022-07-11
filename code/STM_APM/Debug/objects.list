@@ -1,4 +1,5 @@
 "./Core/Src/dfr_no2_co.o"
+"./Core/Src/ds3231.o"
 "./Core/Src/fatfs_sd.o"
 "./Core/Src/main.o"
 "./Core/Src/particulate_matter.o"
