@@ -30,6 +30,11 @@ typedef struct dfr_reading
 
     float no2;
     float co;
+    float ch4;
+    float c2h5oh;
+    float h2;
+    float nh3;
+
     int16_t r0_ox;
     int16_t r0_red;
     uint16_t oxData;
@@ -110,5 +115,41 @@ float getNitrogenDioxide(dfr_data *dev);
  * @return float - to co variable in struct.
  */
 float getCarbonMonoxide(dfr_data *dev);
+
+/**
+ * @brief Calculate Methane value.
+ *
+ * @param[in] data - Pointer to the struct for holding sensor reading.
+ *
+ * @return float - to ch4 variable in struct.
+ */
+float getMethane(dfr_data *dev);
+
+/**
+ * @brief Calculate Ethanol value.
+ *
+ * @param[in] data - Pointer to the struct for holding sensor reading.
+ *
+ * @return float - to c2h5oh variable in struct.
+ */
+float getEthanol(dfr_data *dev);
+
+/**
+ * @brief Calculate hydrogen value.
+ *
+ * @param[in] data - Pointer to the struct for holding sensor reading.
+ *
+ * @return float - to h2 variable in struct.
+ */
+float getHydrogen(dfr_data *dev);
+
+/**
+ * @brief Calculate Ammonia value.
+ *
+ * @param[in] data - Pointer to the struct for holding sensor reading.
+ *
+ * @return float - to nh3 variable in struct.
+ */
+float getAmmonia(dfr_data *dev);
 
 #endif /* _DFR_NO2_CO_H_ */

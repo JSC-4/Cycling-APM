@@ -56,6 +56,52 @@ float getCarbonMonoxide(dfr_data *dev)
     return co;
 }
 
+float getMethane(dfr_data *dev)
+{
+  if(dev->RS_R0_RED_data > 0.786)
+    return 0.0;
+  float methane = (0.786 - dev->RS_R0_RED_data) / 0.000023;
+  if(methane < 1000.0) methane = 0.0;
+  if(methane > 25000.0) methane = 25000.0;
+  return methane;
+}
+
+float getEthanol(dfr_data *dev)
+{
+  if(dev->RS_R0_RED_data > 0.306)
+    return 0.0;
+  float ethanol = (0.306 - dev->RS_R0_RED_data) / 0.00057;
+  if(ethanol < 10.0)
+    return 0.0;
+  if(ethanol > 500.0)
+    return 500.0;
+  return ethanol;
+}
+
+float getHydrogen(dfr_data *dev)
+{
+  if(dev->RS_R0_RED_data > 0.279)
+    return 0.0;
+  float hydrogen = (0.279 - dev->RS_R0_RED_data) / 0.00026;
+  if(hydrogen < 1.0)
+    return 0.0;
+  if(hydrogen > 1000.0)
+    return 1000.0;
+  return hydrogen;
+}
+
+float getAmmonia(dfr_data *dev)
+{
+  if(dev->RS_R0_RED_data > 0.8)
+    return 0.0;
+  float ammonia = (0.8 - dev->RS_R0_RED_data) / 0.0015;
+  if(ammonia < 1.0)
+    return 0.0;
+  if(ammonia > 500.0)
+    return 500.0;
+  return ammonia;
+}
+
 /* Check if device is in sleep state */
 HAL_StatusTypeDef dfrWakeUp(dfr_data *dev)
 {
