@@ -96,6 +96,15 @@ int16_t getSensorData(dfr_data *dev);
  */
 HAL_StatusTypeDef getGasData(dfr_data *dev);
 
+/**
+ * @brief Call this function to read get the r0_ox and r0_red values after warmup
+ *
+ * @param[in] dec_i2c - Pointer to the I2C struct.
+ * @param[in] data - Pointer to the struct for holding sensor readings.
+ *
+ * @return bool - 1 on success, otherwise zero if an error.
+ */
+HAL_StatusTypeDef dfrWarmUpData(dfr_data *dev);
 
 /**
  * @brief Calculate Nitrogen Dioxide value.

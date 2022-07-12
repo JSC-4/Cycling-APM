@@ -22,10 +22,19 @@ HAL_StatusTypeDef dfr_initialise(dfr_data *dev, I2C_HandleTypeDef *i2cHandle) {
 /* Take a measurement, and get the readings for NO2 and CO */
 HAL_StatusTypeDef getGasData(dfr_data *dev)
 {
-    getSensorData(dev);
+	HAL_StatusTypeDef status;
 
+	status = getSensorData(dev);
+    if (status == HAL_ERROR)
+    {
+        return HAL_ERROR;
+    }
     dev->no2 = getNitrogenDioxide(dev);
     dev->co = getCarbonMonoxide(dev);
+    dev->ch4 = getMethane(dev);
+    dev->c2h5oh = getEthanol(dev);
+    dev->h2 = getHydrogen(dev);
+    dev->nh3 = getAmmonia(dev);
 
     return HAL_OK;
 }
@@ -146,37 +155,52 @@ HAL_StatusTypeDef dfrWakeUp(dfr_data *dev)
     return HAL_OK;
 }
 
+HAL_StatusTypeDef dfrWarmUpData(dfr_data *dev)
+{
+	HAL_StatusTypeDef status;
+
+	status = getSensorData(dev);
+    if (status == HAL_ERROR)
+    {
+        return HAL_ERROR;
+    }
+
+    /* Calculate oxsiding and reducing values */
+    dev->r0_ox = dev->powerData - dev->oxData;
+    dev->r0_red = dev->powerData - dev->redData;
+
+    return HAL_OK;
+}
+
 /* Read sensor for measurements */
 int16_t getSensorData(dfr_data *dev)
 {
 	HAL_StatusTypeDef status;
-    uint8_t buf[1] = {OX_REGISTER_HIGH};
+//    uint8_t buf[1] = {OX_REGISTER_HIGH};
     uint8_t recv_data[20] = {0x00};
 
+    status = HAL_I2C_Mem_Read(dev->i2cHandle, (0x78 << 1), 0x04, I2C_MEMADD_SIZE_8BIT, recv_data, 6, 100);
     /* Set the address pointer to OX_REGISTER_HIGH */
-    status = HAL_I2C_Master_Transmit(dev->i2cHandle, (0x78 << 1), buf, 1,
-			50);
+//    status = HAL_I2C_Master_Transmit(dev->i2cHandle, (0x78 << 1), buf, 1,
+//			50);
     if (status != 0)
     {
 //        printf("Failed to write I2C device address for getting sensor data (err %i)\n", ret);
         return HAL_ERROR;
     }
-    status = HAL_I2C_Master_Receive(dev->i2cHandle, (0x78 << 1) | 0x01, recv_data, 6,
-			50);
-    if (status != 0)
-    {
-//        printf("Failed to write I2C device address for getting sensor data (err %i)\n", ret);
-        return HAL_ERROR;
-    }
+//    status = HAL_I2C_Master_Receive(dev->i2cHandle, (0x78 << 1) | 0x01, recv_data, 6,
+//			50);
+//    if (status != 0)
+//    {
+////        printf("Failed to write I2C device address for getting sensor data (err %i)\n", ret);
+//        return HAL_ERROR;
+//    }
 
     /* Shift high and low data in the buffer */
     dev->oxData = (((uint16_t)recv_data[0] << 8) + (uint16_t)recv_data[1]);
     dev->redData = (((uint16_t)recv_data[2] << 8) + (uint16_t)recv_data[3]);
     dev->powerData = (((uint16_t)recv_data[4] << 8) + (uint16_t)recv_data[5]);
 
-    /* Calculate oxsiding and reducing values */
-    dev->r0_ox = dev->powerData - dev->oxData;
-    dev->r0_red = dev->powerData - dev->redData;
     // printf("__r0_ox = %d, __r0_red = %d, powerData = %d, oxData = %d, redData = %d\n", data->r0_ox, data->r0_red, data->powerData, data->oxData, data->redData);
 
     dev->RS_R0_RED_data = (float)(dev->powerData - dev->redData) / (float)dev->r0_red;
