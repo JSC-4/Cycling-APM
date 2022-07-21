@@ -165,7 +165,7 @@ HAL_StatusTypeDef dfrWarmUpData(dfr_data *dev)
         return HAL_ERROR;
     }
 
-    /* Calculate oxsiding and reducing values */
+    /* Calculate oxidising and reducing values */
     dev->r0_ox = dev->powerData - dev->oxData;
     dev->r0_red = dev->powerData - dev->redData;
 

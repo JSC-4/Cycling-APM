@@ -158,6 +158,8 @@ int main(void) {
 
 	HAL_StatusTypeDef status;
 	char strDate[10];
+	char strPm[20];
+
 	char str[255];
 
 	status = dfrWakeUp(&dfr_s);
@@ -222,6 +224,8 @@ int main(void) {
 		status = pm_read(&pm_s);
 		if (status == HAL_ERROR) {
 			send_uart("Error\n\r");
+		} else {
+			sprintf(strPm, "%d,%d,%d", pm_s.pm10_env, pm_s.pm25_env, pm_s.pm100_env);
 		}
 
 		status = getGasData(&dfr_s);
@@ -230,8 +234,8 @@ int main(void) {
 		} else if (status == HAL_ERROR) {
 			send_uart("Error\n\r");
 		}
-		sprintf(str, "%s,%.1lf,%.1lf,%d,%.1f,%.3f\r", strDate, sht40_s.temperature,
-				sht40_s.humidity, pm_s.pm25_env, dfr_s.co, dfr_s.no2
+		sprintf(str, "%s,%.1lf,%.1lf,%s,%.1f,%.3f\r\n", strDate, sht40_s.temperature,
+				sht40_s.humidity, strPm, dfr_s.co, dfr_s.no2
 				);
 		send_uart(str);
 
