@@ -1,6 +1,11 @@
 ../Core/Src/dfr_no2_co.c:3:19:dfr_initialise	16	static
-../Core/Src/dfr_no2_co.c:23:19:getGasData	16	static
-../Core/Src/dfr_no2_co.c:34:7:getNitrogenDioxide	24	static
-../Core/Src/dfr_no2_co.c:47:7:getCarbonMonoxide	24	static
-../Core/Src/dfr_no2_co.c:60:19:dfrWakeUp	32	static
-../Core/Src/dfr_no2_co.c:104:9:getSensorData	48	static
+../Core/Src/dfr_no2_co.c:23:19:getGasData	24	static
+../Core/Src/dfr_no2_co.c:43:7:getNitrogenDioxide	24	static
+../Core/Src/dfr_no2_co.c:56:7:getCarbonMonoxide	24	static
+../Core/Src/dfr_no2_co.c:68:7:getMethane	24	static
+../Core/Src/dfr_no2_co.c:78:7:getEthanol	24	static
+../Core/Src/dfr_no2_co.c:90:7:getHydrogen	24	static
+../Core/Src/dfr_no2_co.c:102:7:getAmmonia	24	static
+../Core/Src/dfr_no2_co.c:115:19:dfrWakeUp	32	static
+../Core/Src/dfr_no2_co.c:158:19:dfrWarmUpData	24	static
+../Core/Src/dfr_no2_co.c:176:9:getSensorData	56	static

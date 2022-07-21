@@ -31,7 +31,7 @@ HAL_StatusTypeDef pm_read(pm_data *dev) {
 	status = HAL_I2C_Master_Transmit(dev->i2cHandle, PM_ADDR, PM_SC1, 1,
 			HAL_MAX_DELAY);
 	if (status != HAL_OK) {
-		return status;
+		return HAL_ERROR;
 	} else {
 		/* Read particulate matter registers */
 		status = HAL_I2C_Master_Receive(dev->i2cHandle, PM_ADDR, pm_buffer, 32,
@@ -39,10 +39,10 @@ HAL_StatusTypeDef pm_read(pm_data *dev) {
 
 		/* Check if first element is 0x42 */
 		if (status != HAL_OK) {
-			return status;
+			return HAL_ERROR;
 		} else {
 			if (pm_buffer[0] != 0x42) {
-				return status;
+				return HAL_ERROR;
 			} else {
 
 				/* Shift data in buffer */

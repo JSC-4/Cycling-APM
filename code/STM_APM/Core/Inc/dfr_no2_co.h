@@ -117,7 +117,7 @@ float getNitrogenDioxide(dfr_data *dev);
 
 
 /**
- * @brief Calculate Carbon Dioxide value.
+ * @brief Calculate Carbon Monoxide value.
  *
  * @param[in] data - Pointer to the struct for holding sensor reading.
  *
