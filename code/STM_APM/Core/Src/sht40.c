@@ -21,30 +21,26 @@ HAL_StatusTypeDef sht40_read(sht40_data *dev)
 	float t_ticks, rh_ticks = 0;
     uint8_t buf[1] = {SHT40_HP};
 
-    /* Write to the high precision register for temperature and humitidy values */
-//    status = HAL_I2C_Mem_Write(dev->i2cHandle, SHT40_ADDR, SHT40_HP, I2C_MEMADD_SIZE_8BIT, pData, 1, HAL_Max);
+    /* Write to the high precision register for temperature and humidity values */
         status = HAL_I2C_Master_Transmit(dev->i2cHandle, (0x44 << 1), buf, 1,
     			50);
     if (status != 0)
     {
-//    	printf("Failed to write I2C device address (err %i)\n", ret);
     	return HAL_TIMEOUT;
     }
 
-    /* wait for 10 millseconds */
+    /* wait for 10 milliseconds */
     HAL_Delay(10);
 
     /* Read the six return values for the register */
-//    status = HAL_I2C_Mem_Read(dev->i2cHandle, SHT40_ADDR, SHT40_HP, I2C_MEMADD_SIZE_8BIT, sht40_buffer, 6, HAL_MAX_DELAY);
     status = HAL_I2C_Master_Receive(dev->i2cHandle, (0x44 << 1) | 0x01, sht40_buffer, 6,
 			50);
     if (status != 0)
     {
-//    	printf("Failed to read I2C device address (err %i)\n", ret);
     	return HAL_ERROR;
     }
 
-    /* Shift the data and convert to temperature and humidty reading */
+    /* Shift the data and convert to temperature and humidity reading */
     t_ticks = (uint16_t)sht40_buffer[0] * 256 + (uint16_t)sht40_buffer[1];
     rh_ticks = (uint16_t)sht40_buffer[3] * 256 + (uint16_t)sht40_buffer[4];
 

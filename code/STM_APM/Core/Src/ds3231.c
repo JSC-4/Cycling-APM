@@ -121,25 +121,14 @@ HAL_StatusTypeDef getTime(ds3231_data *dev) {
 
 	cmd[0] = DS3231_SECONDS;
 
-	status = HAL_I2C_Master_Transmit(dev->i2cHandle, (DS3231_ADDR << 1), cmd, 1, 50);
-//	if (status != 0) {
-////    	printf("Failed to write I2C device address (err %i)\n", ret);
-//		return HAL_TIMEOUT;
-//	}
+	/* Write to the DS3231 memory register to read seconds, minutes and hours */
+    status = HAL_I2C_Mem_Read(dev->i2cHandle, (DS3231_ADDR << 1), cmd, I2C_MEMADD_SIZE_8BIT, buf, 3, 50);
+    if (status != 0)
+    {
+    	return HAL_ERROR;
+    }
 
-    status = HAL_I2C_Master_Receive(dev->i2cHandle, (DS3231_ADDR << 1), buf, 3,
-			50);
-//    if (status != 0)
-//    {
-////    	printf("Failed to read I2C device address (err %i)\n", ret);
-//    	return HAL_ERROR;
-//    }
-
-
-//	for (int i = 0; i < 3; i++) {
-//		bcd2dec(buf[i]);
-//	}
-
+    /* Convert the BCD values to integers, and store in the struct */
 	dev->second = DS3231_DecodeBCD(buf[0]);
 	dev->minute = DS3231_DecodeBCD(buf[1]);
 	dev->hour = DS3231_DecodeBCD(buf[2]);

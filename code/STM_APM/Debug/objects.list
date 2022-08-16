@@ -1,3 +1,4 @@
+"./Core/Src/MAFilter.o"
 "./Core/Src/dfr_no2_co.o"
 "./Core/Src/ds3231.o"
 "./Core/Src/fatfs_sd.o"

@@ -21,8 +21,8 @@ typedef struct sht40_reading
 {
 	I2C_HandleTypeDef *i2cHandle; // I2C Handle
 
-    double temperature;     // Temperature
-    double humidity;       //  Humidity
+    float temperature;     // Temperature
+    float humidity;       //  Humidity
 } sht40_data;
 
 

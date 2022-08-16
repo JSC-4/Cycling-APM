@@ -30,6 +30,7 @@
 #include "particulate_matter.h"
 #include "sht40.h"
 #include "ds3231.h"
+#include "MAFilter.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -56,6 +57,8 @@ TIM_HandleTypeDef htim16;
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
+MAFilter MA_PM[3];
+MAFilter MA_MICS[2];
 
 /* USER CODE END PV */
 
@@ -125,6 +128,8 @@ int main(void) {
 	sht40_data sht40_s;
 	ds3231_data ds3231_s;
 
+	float PM[3];
+	float MICS[3];
 	/* USER CODE END 1 */
 
 	/* MCU Configuration--------------------------------------------------------*/
@@ -206,7 +211,6 @@ int main(void) {
 	/* Infinite loop */
 	/* USER CODE BEGIN WHILE */
 	while (1) {
-
 		status = getTime(&ds3231_s);
 		if (status == HAL_ERROR) {
 			send_uart("ERROR\n\r");
@@ -225,37 +229,40 @@ int main(void) {
 		if (status == HAL_ERROR) {
 			send_uart("Error\n\r");
 		} else {
-			sprintf(strPm, "%d,%d,%d", pm_s.pm10_env, pm_s.pm25_env, pm_s.pm100_env);
+			PM[0] = MA_Update(&MA_PM[0], (float)pm_s.pm10_env);
+			PM[1] = MA_Update(&MA_PM[1], (float)pm_s.pm25_env);
+			PM[2] = MA_Update(&MA_PM[2], (float)pm_s.pm100_env);
+			sprintf(strPm, "%d,%d,%d", (uint16_t)PM[0], (uint16_t)PM[1], (uint16_t)PM[2]);
 		}
 
 		status = getGasData(&dfr_s);
-		if (status == HAL_TIMEOUT) {
+		if (status  == HAL_TIMEOUT) {
 			send_uart("Timeout\n\r");
 		} else if (status == HAL_ERROR) {
 			send_uart("Error\n\r");
 		}
-		sprintf(str, "%s,%.1lf,%.1lf,%s,%.1f,%.3f\r\n", strDate, sht40_s.temperature,
-				sht40_s.humidity, strPm, dfr_s.co, dfr_s.no2
+
+		MICS[0] = MA_Update(&MA_MICS[0], dfr_s.co);
+		MICS[1] = MA_Update(&MA_MICS[1], dfr_s.no2);
+
+		sprintf(str, "%s,%.1f,%.1f,%s,%.3f,%.3f\r", strDate, sht40_s.temperature,
+				sht40_s.humidity, strPm, MICS[0], MICS[1]
 				);
 		send_uart(str);
 
 		/* Open a file to write */
 		fresult = f_open(&fil, "sensor.txt", FA_OPEN_ALWAYS | FA_WRITE);
-
 		fresult = f_lseek(&fil, f_size(&fil));
 
 		/* Writing text */
 		fresult = f_puts(str, &fil);
-
 		/* Close file */
 		f_close(&fil);
 
 		HAL_GPIO_TogglePin(GPIOB, LD3_Pin);
-
 		HAL_Delay(100);
 
 		/* USER CODE END WHILE */
-
 		/* USER CODE BEGIN 3 */
 	}
 	/* USER CODE END 3 */

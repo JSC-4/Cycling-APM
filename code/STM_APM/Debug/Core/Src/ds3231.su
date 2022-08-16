@@ -4,5 +4,5 @@
 ../Core/Src/ds3231.c:29:19:ds3231_initialise	16	static
 ../Core/Src/ds3231.c:39:19:setTime	40	static
 ../Core/Src/ds3231.c:72:19:setDate	40	static
-../Core/Src/ds3231.c:115:19:getTime	32	static
-../Core/Src/ds3231.c:152:19:getDate	40	static
+../Core/Src/ds3231.c:115:19:getTime	40	static
+../Core/Src/ds3231.c:141:19:getDate	40	static

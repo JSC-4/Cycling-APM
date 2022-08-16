@@ -7,5 +7,5 @@
 ../Core/Src/dfr_no2_co.c:90:7:getHydrogen	24	static
 ../Core/Src/dfr_no2_co.c:102:7:getAmmonia	24	static
 ../Core/Src/dfr_no2_co.c:115:19:dfrWakeUp	32	static
-../Core/Src/dfr_no2_co.c:158:19:dfrWarmUpData	24	static
-../Core/Src/dfr_no2_co.c:176:9:getSensorData	56	static
+../Core/Src/dfr_no2_co.c:151:19:dfrWarmUpData	24	static
+../Core/Src/dfr_no2_co.c:168:9:getSensorData	56	static

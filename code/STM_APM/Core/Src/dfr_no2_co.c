@@ -131,27 +131,20 @@ HAL_StatusTypeDef dfrWakeUp(dfr_data *dev)
 			50);
     if (status != 0)
     {
-//        printf("Failed to write I2C device address for getting sensor data (err %i)\n", ret);
         return HAL_ERROR;
     }
 
     /* Device is sleeping*/
     if (mode[0] == 0)
     {
-
         status = HAL_I2C_Master_Transmit(dev->i2cHandle, (0x78 << 1), regData, 2,
     			50);
         if (status != 0)
         {
             return HAL_ERROR;
         }
-//        printf("Wake sensor up\n");
-//        k_msleep(100);
     }
-    else
-    {
-//        printf("Device is woken up\n");
-    }
+
     return HAL_OK;
 }
 
@@ -160,8 +153,7 @@ HAL_StatusTypeDef dfrWarmUpData(dfr_data *dev)
 	HAL_StatusTypeDef status;
 
 	status = getSensorData(dev);
-    if (status == HAL_ERROR)
-    {
+    if (status == HAL_ERROR){
         return HAL_ERROR;
     }
 
@@ -176,81 +168,20 @@ HAL_StatusTypeDef dfrWarmUpData(dfr_data *dev)
 int16_t getSensorData(dfr_data *dev)
 {
 	HAL_StatusTypeDef status;
-//    uint8_t buf[1] = {OX_REGISTER_HIGH};
     uint8_t recv_data[20] = {0x00};
 
     status = HAL_I2C_Mem_Read(dev->i2cHandle, (0x78 << 1), 0x04, I2C_MEMADD_SIZE_8BIT, recv_data, 6, 100);
-    /* Set the address pointer to OX_REGISTER_HIGH */
-//    status = HAL_I2C_Master_Transmit(dev->i2cHandle, (0x78 << 1), buf, 1,
-//			50);
-    if (status != 0)
-    {
-//        printf("Failed to write I2C device address for getting sensor data (err %i)\n", ret);
+    if (status != 0){
         return HAL_ERROR;
     }
-//    status = HAL_I2C_Master_Receive(dev->i2cHandle, (0x78 << 1) | 0x01, recv_data, 6,
-//			50);
-//    if (status != 0)
-//    {
-////        printf("Failed to write I2C device address for getting sensor data (err %i)\n", ret);
-//        return HAL_ERROR;
-//    }
 
     /* Shift high and low data in the buffer */
     dev->oxData = (((uint16_t)recv_data[0] << 8) + (uint16_t)recv_data[1]);
     dev->redData = (((uint16_t)recv_data[2] << 8) + (uint16_t)recv_data[3]);
     dev->powerData = (((uint16_t)recv_data[4] << 8) + (uint16_t)recv_data[5]);
 
-    // printf("__r0_ox = %d, __r0_red = %d, powerData = %d, oxData = %d, redData = %d\n", data->r0_ox, data->r0_red, data->powerData, data->oxData, data->redData);
-
     dev->RS_R0_RED_data = (float)(dev->powerData - dev->redData) / (float)dev->r0_red;
     dev->RS_R0_OX_data = (float)(dev->powerData - dev->oxData) / (float)dev->r0_ox;
 
     return 0;
 }
-
-/* Device requires three minutes to warm up before taking samples*/
-//HAL_StatusTypeDef dfrWarmUpTime(dfr_data *data)
-//{
-//    static timing_t start_time, current_time;
-//    uint64_t delayTime = 60000000000;
-//    uint64_t total_cycles;
-//    uint64_t total_ns;
-//    static uint8_t flag = 0;
-//
-//    /* Initialie timer */
-//    if (flag == 0)
-//    {
-//        flag = 1;
-//        current_time = 0;
-//        timing_init();
-//        timing_start();
-//        start_time = timing_counter_get();  // Store the current timer (start)
-//    }
-//
-//    current_time = timing_counter_get();  // Store the current timer (current)
-//
-//    /* Get the elapsed time in nanoseconds */
-//    total_cycles = timing_cycles_get(&start_time, &current_time);
-//    total_ns = timing_cycles_to_ns(total_cycles);
-//
-//    // printf("Elapsed Time = %llu\n", total_ns);
-//
-//    /* If timer has not reached value then return */
-//    if (total_ns < delayTime)
-//    {
-//        return false;
-//    }
-//
-//    /* If timer has expired, reset the flag and stop the timer */
-//    flag = 0;
-//    timing_stop();
-//
-//    /* Used to see measurements after every minute */
-//    if (getSensorData(dev_i2c, data) == ERROR)
-//    {
-//        return false;
-//    }
-//
-//    return true;
-//}
